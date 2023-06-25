@@ -6,6 +6,7 @@ import threading
 from logger import Config
 import datetime
 import numpy as np
+from discord_webhook import DiscordWebhook
 
 global module,errorlevel
 
@@ -35,7 +36,7 @@ def threadstarter():
 def timecheck():
     global module
     realtimevalue = realtime()
-    printmsg =  'starting gpt timecheck'
+    printmsg =  'starting upload timecheck'
     realtimevalue = realtime()
     #print('[' + str(module) + ']' + str(realtimevalue) + '|' + printmsg)
     logger.success(printmsg)
@@ -49,54 +50,41 @@ def realtime():
 
 def readvalues():
     global module,errorlevel
-    values = 'null' # zuerst auf null setzten
-    while values == 'null':
-        database.connect() #GPT Database öffnen
-        values = database.getvalues()  #GBT Database Daten auslesen
-        realtimevalue = realtime()
-        #print('[' + str(module) + ']' + str(realtimevalue) + '|' + printmsg)
-        database.close() #GPT Database schließen
-        if values == 'null':
-            printmsg = 'failed to open ' + module + ' database'
-            logger.error(printmsg,errorlevel)
-            realtimevalue = realtime()
-            #print('[' + str(module) + ']' + str(realtimevalue) + '|' + str(errorlevel) + '|' + str(printmsg))
-            if errorlevel < 3:
-                errorlevel += 1
-            else:
-                pytime.sleep(120)
-        printmsg = 'opening ' + str(module) + ' database, values:' + str(values)
-        logger.success(printmsg)
-    return values
-
-def converttoarray(values):
-    gptarray = np.array(values)
-    third_column = gptarray[:, 2]
-    sorted_indices = np.argsort(third_column)[::-1]
-    sorted_gptarray = gptarray[sorted_indices]
-    zeile = 0
-    print(sorted_gptarray)
-    num_rows = sorted_gptarray.shape[0]
-    #while zeile <= num_rows:
-    #    performancenumber1 = sorted_gptarray[zeile,2]
+    webhook = DiscordWebhook(url='https://canary.discord.com/api/webhooks/1122554218520264714/PW8FGYZyJRJQ0Y8YBGnYBI1b_Wxh2RaV9SJHzhooVgPhWh_E0zRfJ3xG6TEjnrr8FHnf', content='I am uploading a Video. {realtime()}')
+    response = webhook.execute()
+    return 0
 
 def main():
     values = readvalues()
-    gptarray = converttoarray(values)
+    
+def calculate_interval():
+    # Anzahl der Videos
+    num_videos = int(config.getvalue('count'))
 
+    # Tageslänge in Sekunden
+    seconds_in_day = 24 * 60 * 60
 
+    # Zeitintervall basierend auf der Anzahl der Videos berechnen
+    interval = seconds_in_day / num_videos
 
+    return interval
 
-config = Config('GPT')
+def schedule_readvalues():
+    interval = calculate_interval()
+
+    # Funktion `readvalues()` entsprechend dem berechneten Zeitintervall in der Schedule einplanen
+    schedule.every(interval).seconds.do(readvalues)
+
+config = Config('UPLOAD')
 module = str(config.getvalue('module'))
-time = str(config.getvalue('time'))
 database = Database(str(config.getvalue('database')))
 logger = Logger(str(config.getvalue('logger')))
 
 configloader()
 
-schedule.every().day.at(time).do(main)
+schedule_readvalues()
+
 errorlevel = 0
 
-#threadstarter() #zum test ausgeblendet
+threadstarter()
 main()

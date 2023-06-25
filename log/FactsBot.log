@@ -1,0 +1,56 @@
+
+INFO - [gpt] [2023-06-25 16:12:46] | loading configs: GPT|15:58|<database.Database object at 0x7f14bc843700>|<logger.Logger object at 0x7f14bb43ebb0>
+INFO - [gpt] [2023-06-25 16:14:11] | loading configs: GPT|15:58|<database.Database object at 0x7fa73a28c6a0>|<logger.Logger object at 0x7fa738e87b20>
+INFO - [gpt] [2023-06-25 16:14:42] | loading configs: GPT|15:58|<database.Database object at 0x7fbfa67836a0>|<logger.Logger object at 0x7fbfa537db20>
+INFO - [gpt] [2023-06-25 16:14:42] | starting gpt timecheck
+INFO - [gpt] [2023-06-25 16:17:05] | loading configs: GPT|15:58|<database.Database object at 0x7fbc382b3700>|<logger.Logger object at 0x7fbc36eadb80>
+INFO - [gpt] [2023-06-25 16:17:05] | starting gpt timecheck
+INFO - [gpt] [2023-06-25 16:17:20] | loading configs: GPT|15:58|<database.Database object at 0x7f26f9830700>|<logger.Logger object at 0x7f26f8429b80>
+INFO - [gpt] [2023-06-25 16:17:20] | starting gpt timecheck
+INFO - [gpt] [2023-06-25 16:17:39] | loading configs: GPT|16:18|<database.Database object at 0x7f702d42d700>|<logger.Logger object at 0x7f702c027b80>
+INFO - [gpt] [2023-06-25 16:17:39] | starting gpt timecheck
+INFO - [gpt] [2023-06-25 16:22:11] | loading configs: GPT|16:23|<database.Database object at 0x7ff83c3ddf10>|<logger.Logger object at 0x7ff83c3ec160>
+INFO - [gpt] [2023-06-25 16:22:11] | starting gpt timecheck
+INFO - [gpt] [2023-06-25 16:23:36] | loading configs: GPT|16:23|<database.Database object at 0x7fd2f87cfd30>|<logger.Logger object at 0x7fd2f73dc070>
+INFO - [gpt] [2023-06-25 16:23:36] | starting gpt timecheck
+INFO - [gpt] [2023-06-25 16:23:48] | loading configs: GPT|16:24|<database.Database object at 0x7f9f513c9fd0>|<logger.Logger object at 0x7f9f513d9070>
+INFO - [gpt] [2023-06-25 16:23:48] | starting gpt timecheck
+INFO - [gpt] [2023-06-25 16:24:42] | loading configs: GPT|16:25|<database.Database object at 0x7f23aa1ecfd0>|<logger.Logger object at 0x7f23aa1fb070>
+INFO - [gpt] [2023-06-25 16:24:42] | starting gpt timecheck
+INFO - [gpt] [2023-06-25 16:25:27] | loading configs: GPT|16:26|<database.Database object at 0x7f090b131fd0>|<logger.Logger object at 0x7f090b140070>
+INFO - [gpt] [2023-06-25 16:25:27] | starting gpt timecheck
+INFO - [gpt] [2023-06-25 16:28:50] | loading configs: GPT|16:29|<database.Database object at 0x7f6e46400100>|<logger.Logger object at 0x7f6e464000d0>
+INFO - [gpt] [2023-06-25 16:28:50] | starting gpt timecheck
+INFO - [gpt] [2023-06-25 16:29:00] | opening GPT database, values:
+INFO - [gpt] [2023-06-25 16:29:50] | loading configs: GPT|16:30|<database.Database object at 0x7f8e64cf8160>|<logger.Logger object at 0x7f8e64cf8130>
+INFO - [gpt] [2023-06-25 16:29:50] | starting gpt timecheck
+INFO - [gpt] [2023-06-25 16:30:00] | opening GPT database, values:[(1, 'Hallo')]
+INFO - [gpt] [2023-06-25 16:53:11] | loading configs: GPT|16:54|<database.Database object at 0x7fa053fef160>|<logger.Logger object at 0x7fa053fef130>
+INFO - [gpt] [2023-06-25 16:53:11] | starting gpt timecheck
+INFO - [gpt] [2023-06-25 16:54:00] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None)]
+INFO - [gpt] [2023-06-25 17:05:50] | loading configs: GPT|16:54|<database.Database object at 0x7fd353e6ccd0>|<logger.Logger object at 0x7fd353e6cca0>
+INFO - [gpt] [2023-06-25 17:05:50] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None)]
+INFO - [gpt] [2023-06-25 17:06:05] | loading configs: GPT|16:54|<database.Database object at 0x7f02590f9d00>|<logger.Logger object at 0x7f02590f9cd0>
+INFO - [gpt] [2023-06-25 17:06:05] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None)]
+INFO - [gpt] [2023-06-25 17:08:20] | loading configs: GPT|16:54|<database.Database object at 0x7f9e9355fdc0>|<logger.Logger object at 0x7f9e9355fd90>
+INFO - [gpt] [2023-06-25 17:08:20] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None)]
+INFO - [gpt] [2023-06-25 17:11:28] | loading configs: GPT|16:54|<database.Database object at 0x7f7f1bc2df40>|<logger.Logger object at 0x7f7f1bc2df10>
+INFO - [gpt] [2023-06-25 17:11:28] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None)]
+INFO - [gpt] [2023-06-25 17:11:48] | loading configs: GPT|16:54|<database.Database object at 0x7f0040f8cf40>|<logger.Logger object at 0x7f0040f8cf10>
+INFO - [gpt] [2023-06-25 17:11:48] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None)]
+INFO - [gpt] [2023-06-25 17:16:54] | loading configs: GPT|16:54|<database.Database object at 0x7fe53396dee0>|<logger.Logger object at 0x7fe53396deb0>
+INFO - [gpt] [2023-06-25 17:16:54] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None)]
+INFO - [gpt] [2023-06-25 17:18:45] | loading configs: GPT|16:54|<database.Database object at 0x7fde44ab1fd0>|<logger.Logger object at 0x7fde44ab1fa0>
+INFO - [gpt] [2023-06-25 17:18:45] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None)]
+INFO - [gpt] [2023-06-25 17:18:54] | loading configs: GPT|16:54|<database.Database object at 0x7f6c0f31dfd0>|<logger.Logger object at 0x7f6c0f31dfa0>
+INFO - [gpt] [2023-06-25 17:18:54] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None)]
+INFO - [gpt] [2023-06-25 17:19:45] | loading configs: GPT|16:54|<database.Database object at 0x7f7542bf4fd0>|<logger.Logger object at 0x7f7542bf4fa0>
+INFO - [gpt] [2023-06-25 17:19:45] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None)]
+INFO - [gpt] [2023-06-25 17:20:08] | loading configs: GPT|16:54|<database.Database object at 0x7ff5186c4dc0>|<logger.Logger object at 0x7ff5186c4d90>
+INFO - [gpt] [2023-06-25 17:20:08] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None)]
+INFO - [gpt] [2023-06-25 17:23:15] | loading configs: GPT|16:54|<database.Database object at 0x7fede924af70>|<logger.Logger object at 0x7fede924af40>
+INFO - [gpt] [2023-06-25 17:23:15] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None)]
+INFO - [gpt] [2023-06-25 17:24:46] | loading configs: GPT|16:54|<database.Database object at 0x7f2098b80f70>|<logger.Logger object at 0x7f2098b80f40>
+INFO - [gpt] [2023-06-25 17:24:46] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None)]
+INFO - [gpt] [2023-06-25 17:57:42] | loading configs: GPT|16:54|<database.Database object at 0x7fd97b294f70>|<logger.Logger object at 0x7fd97b294f40>
+INFO - [gpt] [2023-06-25 17:57:42] | opening GPT database, values:[(2, 'Jannick', 10, None), (3, 'Jonas', 100, None), (4, 'Maxi', 1000, None), (5, 'Joshua', 0, None), (6, 'Joshua', 0, None), (7, 'Robert', 1000, None), (8, 'Robert', 1000, None), (9, 'Petra', 1000, None), (10, 'Peter', 1000, None), (11, 'Johannes', 100, None)]
