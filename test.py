@@ -9,7 +9,7 @@ font_path = "Pfad_zu_einer_Schriftart.ttf"
 video_clip = VideoFileClip(stock_video_path)
 audio_clip = AudioFileClip(stock_music_path)
 
-# Größe und Position der Box für den Titel festlegen
+# Groesse und Position der Box für den Titel festlegen
 box_width = video_clip.w // 2
 box_height = video_clip.h // 6
 box_x = video_clip.w // 4
@@ -24,9 +24,9 @@ fact_text = "Wusstes du, dass Boys Fakten langweilig sind?"
 name_text = "@name"
 
 # Text-Clips für den Titel, den Fakt und den Namen erstellen
-title_clip = TextClip(title_text, fontsize=40, font="Arial", color="white").set_position((box_x + 10, box_y + 10)).set_duration(5)
-fact_clip = TextClip(fact_text, fontsize=30, font="Arial", color="white").set_position((box_x + 10, box_y + 60)).set_duration(5)
-name_clip = TextClip(name_text, fontsize=20, font="Arial", color="white").set_position((10, video_clip.h - 30)).set_duration(5)
+title_clip = TextClip(title_text, fontsize=40, color="white").set_position((box_x + 10, box_y + 10)).set_duration(5)
+fact_clip = TextClip(fact_text, fontsize=30, color="white").set_position((box_x + 10, box_y + 60)).set_duration(5)
+name_clip = TextClip(name_text, fontsize=20, color="white").set_position((10, video_clip.h - 30)).set_duration(5)
 
 # Clips zusammenfügen
 final_clip = CompositeVideoClip([video_clip, title_clip, fact_clip, name_clip])

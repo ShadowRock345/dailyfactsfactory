@@ -58,6 +58,12 @@ class Config():
         except:
             return 'null'
         
+    def getothervalue(self, name, value):
+        try:
+            return self.config[str(name)][str(value)]
+        except:
+            return 'null'
+
     def writevalue(self, value, valuetowrite):
         try:
             self.config[str(self.module)][str(value)] = valuetowrite

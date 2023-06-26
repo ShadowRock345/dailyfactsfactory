@@ -7,12 +7,80 @@ from logger import Config
 import datetime
 import numpy as np
 from discord_webhook import DiscordWebhook
+import os
+import google.oauth2.credentials
+from google_auth_oauthlib.flow import InstalledAppFlow
+from googleapiclient.discovery import build
+from googleapiclient.http import MediaFileUpload
+from google.oauth2.credentials import Credentials
+import pickle
 
-global module,errorlevel
+TOKEN_PATH = 'credentials.pickle'
+
+# Berechtigungsbereiche für die YouTube Data API
+SCOPES = ['https://www.googleapis.com/auth/youtube.upload']
+
+# Überprüfen, ob Anmeldeinformationen bereits vorhanden sind
+if os.path.exists(TOKEN_PATH):
+    with open(TOKEN_PATH, 'rb') as token:
+        credentials = pickle.load(token)
+else:
+    # Erstellen Sie eine neue Instanz des InstalledAppFlow-Objekts
+    flow = InstalledAppFlow.from_client_secrets_file('secret.json', SCOPES)
+
+    # Führen Sie den Autorisierungsfluss durch
+    credentials = flow.run_local_server(port=0)
+
+    # Speichern Sie die Anmeldeinformationen in der Datei
+    with open(TOKEN_PATH, 'wb') as token:
+        pickle.dump(credentials, token)
+
+# Verwenden Sie die Anmeldeinformationen, um die YouTube API zu initialisieren und Aktionen auszuführen
+youtube = build('youtube', 'v3', credentials=credentials)
+
+global module,errorlevel,videos
+
+def upoload(video_path, title, description, tags, categoryID, privacy):
+    #tags should be a list
+    #privacy: public, unlisted, private
+    video_path = video_path
+
+    api_service_name = "youtube"
+    api_version = "v3"
+    client_secrets_file = "secret.json"
+
+    scopes = ["https://ww.googleapis.com/auth/youtube.upload"]
+    flow = InstalledAppFlow.from_client_secrets_file(client_secrets_file, scopes)
+    credentials = flow.run_local_server(port=0)
+
+    youtube = build(api_service_name, api_version, credentials=credentials)
+
+    video_metadata = {
+        "snippet": {
+            "title": str(title),
+            "description": str(description),
+            "tags": (tags),
+            "categoryId": int(categoryID)
+        },
+        "status": {
+            "privacyStatus": str(privacy)
+        }
+    }
+
+    request_body = {
+        "media_body": MediaFileUpload(video_path),
+        "part": "snippet,status"
+    }
+
+    response = youtube.videos().insert(body=video_metadata,**request_body).execute()
+
+    video_url = "https://www.youtube.com/shorts/" + response["id"]
+
+    return video_url
 
 def configloader():
     realtimevalue = realtime()
-    printmsg = 'loading configs: ' + str(module) + '|' + str(time) + '|' + str(database) + '|' + str(logger)
+    printmsg = 'loading configs: ' + str(module) + '|' + str(count) + '|' + str(database) + '|' + str(logger)
     #print('[' + module + ']' + str(realtimevalue) + '|' + printmsg)
     logger.success(printmsg)
 
@@ -49,9 +117,12 @@ def realtime():
     return now.strftime('%Y-%m-%d %H:%M:%S')
 
 def readvalues():
-    global module,errorlevel
-    webhook = DiscordWebhook(url='https://canary.discord.com/api/webhooks/1122554218520264714/PW8FGYZyJRJQ0Y8YBGnYBI1b_Wxh2RaV9SJHzhooVgPhWh_E0zRfJ3xG6TEjnrr8FHnf', content='I am uploading a Video. {realtime()}')
+    global module,errorlevel,videos
+    path = str("videos/") + str(videos[0]) + str(".mp4")
+    vurl = upoload(path, str(videos[0]), str(videos[0]), ["#shorts","cool"], 21, "unlisted")
+    webhook = DiscordWebhook(url='https://canary.discord.com/api/webhooks/1122554218520264714/PW8FGYZyJRJQ0Y8YBGnYBI1b_Wxh2RaV9SJHzhooVgPhWh_E0zRfJ3xG6TEjnrr8FHnf', content='I am uploading a Video. {realtime()}, {vurl}')
     response = webhook.execute()
+    videos.pop(0)
     return 0
 
 def main():
@@ -61,7 +132,7 @@ def calculate_interval():
     # Anzahl der Videos
     num_videos = int(config.getvalue('count'))
 
-    # Tageslänge in Sekunden
+    # Tageslaenge in Sekunden
     seconds_in_day = 24 * 60 * 60
 
     # Zeitintervall basierend auf der Anzahl der Videos berechnen
@@ -77,8 +148,11 @@ def schedule_readvalues():
 
 config = Config('UPLOAD')
 module = str(config.getvalue('module'))
+count = int(config.getvalue('count'))
 database = Database(str(config.getvalue('database')))
 logger = Logger(str(config.getvalue('logger')))
+
+videos = [1,2,3,4,5]
 
 configloader()
 
