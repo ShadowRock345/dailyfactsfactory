@@ -1,9 +1,9 @@
 from database import Database
 from logger import Logger
+from logger import Config
 import schedule
 import time as pytime
 import threading
-from logger import Config
 import datetime
 import numpy as np
 import random
@@ -21,6 +21,7 @@ def configloader():
 
 def threadstarter():
     threadstarter = 0
+    errorlevel = 0
     while threadstarter == 0:
         try:
             thread = threading.Thread(target=timecheck) #timecheck Funktion startet als erstes in eigenem Thread
@@ -31,7 +32,7 @@ def threadstarter():
             printmsg = 'failed to start thread'
             logger.error(printmsg,errorlevel)
             #print('[' + str(module) + ']' + str(realtimevalue) + '|' + str(errorlevel) + '|' + printmsg)
-            if errorlog < 3:
+            if errorlevel < 3:
                 errorlevel += 1
             else:
                 pytime.sleep(120)
