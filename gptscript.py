@@ -9,6 +9,7 @@ import numpy as np
 import random
 import os
 import openai
+import json
 
 global module,errorlevel,videocount,openaiorganizationm,openaiapi_key,factcount
 
@@ -115,18 +116,23 @@ def getfacts(zuverwendendezeilen,sorted_gptarray):
         input('continue?\n')
         i = 0
         while i == 0:
-            response = openai.Completion.create(model="text-davinci-003",prompt=prompt,temperature=0.2,max_tokens=80)
-            if response.status_code == 200:
+            try:
+                response = openai.Completion.create(model="text-davinci-003",prompt=prompt,temperature=0.2,max_tokens=80)
                 printmsg = 'generated ' + str(factcount) + 'facts for the topic: ' + str(topic)
                 logger.success(printmsg)
                 i = 1
-            else:
+            except:
                 printmsg = 'error generating ' + str(factcount) + 'facts for the topic: ' + str(topic) + ' | error code: ' + str(response.status_code)
                 logger.error(printmsg,errorlevel)
                 if errorlevel < 3:
                     errorlevel += 1
                 time.sleep(30)
-            print(str(response))
+                
+        response_json = json.loads(str(response))
+        facts = response_json["choices"][0]["text"]
+        fact_list = facts.strip().split("\n")
+        for fact in fact_list:
+            print(str(fact))
 
 
 def main():

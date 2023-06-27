@@ -1,4 +1,5 @@
 import mysql.connector
+from logger import Logger
 
 class Database():
     def __init__(self, typ):
@@ -76,7 +77,7 @@ class Database():
             except mysql.connector.Error as error:
                 return 'null'
 
-    def write(self):
+    def write(self, data):
         if self.typ == "main":
             if len(data) == self.main:
                 try:
