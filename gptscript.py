@@ -11,13 +11,16 @@ import os
 import openai
 import json
 
-global module,errorlevel,videocount,openaiorganizationm,openaiapi_key,factcount
+global module,errorlevel,videocount,openaiorganizationm,openaiapi_key,factcount,testmode
 
 
 def configloader():
+    global testmode
+    if testmode == True:
+        printmsg = '!using testmode!'
+        logger.success(printmsg)
     realtimevalue = realtime()
-    printmsg = 'loading configs: ' + str(module) + '|' + str(time) + '|' + str(database) + '|' + str(logger)
-    #print('[' + module + ']' + str(realtimevalue) + '|' + printmsg)
+    printmsg = 'loading configs: ' + str(module) + '|' + str(time) + '|' + str(testmode) + '|' + str(factcount)
     logger.success(printmsg)
 
 def threadstarter():
@@ -32,7 +35,6 @@ def threadstarter():
             pytime.sleep(2)
             printmsg = 'failed to start thread'
             logger.error(printmsg,errorlevel)
-            #print('[' + str(module) + ']' + str(realtimevalue) + '|' + str(errorlevel) + '|' + printmsg)
             if errorlevel < 3:
                 errorlevel += 1
             else:
@@ -43,7 +45,6 @@ def timecheck():
     realtimevalue = realtime()
     printmsg =  'starting gpt timecheck'
     realtimevalue = realtime()
-    #print('[' + str(module) + ']' + str(realtimevalue) + '|' + printmsg)
     logger.success(printmsg)
     while True:
         schedule.run_pending()
@@ -61,18 +62,16 @@ def readvalues():
         database.connect() #GPT Database öffnen
         values = database.getvalues()  #GBT Database Daten auslesen
         realtimevalue = realtime()
-        #print('[' + str(module) + ']' + str(realtimevalue) + '|' + printmsg)
         database.close() #GPT Database schließen
         if values == 'null':
             printmsg = 'failed to open ' + module + ' database'
             logger.error(printmsg,errorlevel)
             realtimevalue = realtime()
-            #print('[' + str(module) + ']' + str(realtimevalue) + '|' + str(errorlevel) + '|' + str(printmsg))
             if errorlevel < 3:
                 errorlevel += 1
             else:
                 pytime.sleep(120)
-        printmsg = 'opening ' + str(module) + ' database, values:' + str(values)
+        printmsg = 'opening ' + str(module) + ' database,'
         logger.success(printmsg)
     return values
 
@@ -106,9 +105,9 @@ def converttoarray(values):
 def getfacts(zuverwendendezeilen,sorted_gptarray):
     global openaiapi_key,openaiorganization,factcount
     errorlevel = 0
+    fact_list = []
     openai.organization = str(openaiorganization)
     openai.api_key = openaiapi_key
-    print(openaiapi_key)
     for element in zuverwendendezeilen:
         topic = sorted_gptarray[element,1]
         prompt = 'Generate ' + str(factcount) + ' short facts to the topic "'+ str(topic) + '" . They should be formated in a list for python.'
@@ -120,25 +119,50 @@ def getfacts(zuverwendendezeilen,sorted_gptarray):
                 logger.success(printmsg)
                 i = 1
             except:
-                printmsg = 'error generating ' + str(factcount) + 'facts for the topic: ' + str(topic) + ' | error code: ' + str(response.status_code)
+                printmsg = 'error generating ' + str(factcount) + ' facts for the topic: ' + str(topic) + ' | error code: ' + str(response.status_code)
                 logger.error(printmsg,errorlevel)
                 if errorlevel < 3:
                     errorlevel += 1
                 else:
-                    time.sleep()
+                    time.sleep(600)
                 time.sleep(30)
         response_json = json.loads(str(response))
         facts = response_json["choices"][0]["text"]
-        fact_list = facts.strip().split("\n")
-        for fact in fact_list:
-            print(str(fact))
+        short_fact_list = facts.strip().split("\n")
+        fact_list.append(topic)
+        fact_list.append(short_fact_list)
+    return fact_list
 
+def writetomaindatabase(fact_list):
+    errorvalue = 0
+    i = 0
+    length_fact_list = len(factlist)
+    while x == 0:
+
+
+    while i == 0:
+        try:
+            database.connect()
+            #Status, Fakt, Titel, Hashtag, Performance, VideoID, Laenge, MusikID, Url
+            valuestowrite = ["fact_generated",fact_list,"",None,None,None,None,""]
+            database.write(valuestowrite)
+            database.close()
+            i = 1
+        except:
+            printmsg = 'error writing to main database, errorcode: ' + errorvalue
+            logger.error(printmsg,errorvalue)
+            if errorvalue < 3:
+                errorvalue += 1
+            time.sleep(15)
 
 def main():
     values = readvalues()
     zuverwendendezeilen,sorted_gptarray = converttoarray(values)
-    factlist = getfacts(zuverwendendezeilen,sorted_gptarray)
-
+    if testmode == True:
+        fact_list = [54, ['1. Jazz is a genre of music that originated in the late 19th and early 20th centuries in African American communities.', '2. Rock music is a genre of popular music that originated as "rock and roll" in the United States in the 1950s.', '3. Hip hop is a genre of music that originated in the late 1970s in the Bronx, New York City.'], 55, ['1. International relations is a field of study that examines the interactions between countries.', '2. It is a multidisciplinary field that combines elements of political science, economics, history, and law.', '3. International relations is concerned with the causes of war, the maintenance of peace, and the promotion of cooperation between states.'], 18, ['1. Psychiatry is a branch of medicine that focuses on the diagnosis, treatment, and prevention of mental health disorders.', '', '2. Psychiatrists are medical doctors who specialize in mental health and can prescribe medications.', '', '3. Psychotherapy is a form of treatment used in psychiatry that involves talking with a mental health professional to help identify and manage mental health issues.'], 7, ['["Social media is used by over 3 billion people worldwide.",', '"Facebook is the most popular social media platform with over 2.5 billion users.",', '"Twitter has over 330 million active users every month."]'], 24, ["['The first human civilization appeared in Mesopotamia around 3500 BC.',", " 'The Roman Empire was one of the largest and most influential empires in world history.',", " 'The Industrial Revolution began in the late 18th century and changed the way people lived and worked.']"]]
+    else:
+        fact_list = getfacts(zuverwendendezeilen,sorted_gptarray)
+    writetomaindatabase(fact_list)
 
 
 
@@ -151,6 +175,7 @@ logger = Logger(str(config.getvalue('logger')))
 openaiorganization = str(config.getvalue('openaiorganization'))
 openaiapi_key = str(config.getvalue('openaiapi_key'))
 factcount = str(config.getvalue('factcount'))
+testmode = bool(config.getvalue('testmode'))
 
 
 configloader()
