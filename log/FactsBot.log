@@ -170,3 +170,85 @@ INFO - [gpt] [2023-06-27 18:32:29] | opening GPT database,
 INFO - [gpt] [2023-06-27 18:33:51] | !using testmode!
 INFO - [gpt] [2023-06-27 18:33:51] | loading configs: GPT|16:54|True|three|
 INFO - [gpt] [2023-06-27 18:33:51] | opening GPT database,
+INFO - [gpt] [2023-06-27 18:50:06] | !using testmode!
+INFO - [gpt] [2023-06-27 18:50:06] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 18:50:06] | opening GPT database,
+INFO - [gpt] [2023-06-27 18:50:17] | !using testmode!
+INFO - [gpt] [2023-06-27 18:50:17] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 18:50:17] | opening GPT database,
+INFO - [gpt] [2023-06-27 18:51:30] | !using testmode!
+INFO - [gpt] [2023-06-27 18:51:30] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 18:51:30] | opening GPT database,
+INFO - [gpt] [2023-06-27 18:52:54] | !using testmode!
+INFO - [gpt] [2023-06-27 18:52:54] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 18:52:54] | opening GPT database,
+INFO - [gpt] [2023-06-27 18:53:14] | !using testmode!
+INFO - [gpt] [2023-06-27 18:53:14] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 18:53:14] | opening GPT database,
+INFO - [gpt] [2023-06-27 18:55:20] | !using testmode!
+INFO - [gpt] [2023-06-27 18:55:20] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 18:55:20] | opening GPT database,
+INFO - [gpt] [2023-06-27 18:56:02] | !using testmode!
+INFO - [gpt] [2023-06-27 18:56:02] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 18:56:02] | opening GPT database,
+INFO - [gpt] [2023-06-27 18:56:43] | !using testmode!
+INFO - [gpt] [2023-06-27 18:56:43] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 18:56:43] | opening GPT database,
+INFO - [gpt] [2023-06-27 19:02:16] | !using testmode!
+INFO - [gpt] [2023-06-27 19:02:16] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:02:16] | opening GPT database,
+INFO - [gpt] [2023-06-27 19:03:22] | !using testmode!
+INFO - [gpt] [2023-06-27 19:03:22] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:03:22] | opening GPT database,
+ERROR - [Database] [2023-06-27 19:03:22] | Data length does not match the expected count for the gpt database. , Level: 1
+INFO - [gpt] [2023-06-27 19:03:22] | facts for: 54 were added to the main database
+INFO - [gpt] [2023-06-27 19:08:28] | !using testmode!
+INFO - [gpt] [2023-06-27 19:08:28] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:08:28] | opening GPT database,
+ERROR - [Database] [2023-06-27 19:08:28] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [gpt] [2023-06-27 19:08:28] | error writing to main database, errorcode: 0 , Level: 0
+INFO - [gpt] [2023-06-27 19:08:45] | !using testmode!
+INFO - [gpt] [2023-06-27 19:08:45] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:08:45] | opening GPT database,
+ERROR - [Database] [2023-06-27 19:08:45] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [gpt] [2023-06-27 19:08:53] | error writing to main database, errorcode: 0 , Level: 0
+INFO - [gpt] [2023-06-27 19:10:20] | !using testmode!
+INFO - [gpt] [2023-06-27 19:10:20] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:10:20] | opening GPT database,
+ERROR - [Database] [2023-06-27 19:10:20] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [gpt] [2023-06-27 19:10:28] | error writing to main database, errorcode: 0 , Level: 0
+ERROR - [Database] [2023-06-27 19:10:43] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:10:53] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:11:03] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:11:13] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:11:23] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:11:33] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:11:43] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:11:53] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:12:03] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:12:13] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:12:23] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:12:33] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:12:43] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:12:53] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:13:03] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:13:13] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:13:23] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [Database] [2023-06-27 19:13:33] | Data length does not match the expected count for the gpt database. , Level: 3
+ERROR - [gpt] [2023-06-27 19:13:37] | error writing to main database, errorcode: 1 , Level: 1
+INFO - [gpt] [2023-06-27 19:13:43] | !using testmode!
+INFO - [gpt] [2023-06-27 19:13:43] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:13:43] | opening GPT database,
+ERROR - [gpt] [2023-06-27 19:13:43] | error writing to main database, errorcode: 0 , Level: 0
+INFO - [gpt] [2023-06-27 19:15:15] | !using testmode!
+INFO - [gpt] [2023-06-27 19:15:15] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:15:15] | opening GPT database,
+ERROR - [gpt] [2023-06-27 19:15:15] | error writing to main database, errorcode: 0 Exception: can only concatenate str (not "InterfaceError") to str , Level: 0
+INFO - [gpt] [2023-06-27 19:16:47] | !using testmode!
+INFO - [gpt] [2023-06-27 19:16:47] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:16:47] | opening GPT database,
+ERROR - [gpt] [2023-06-27 19:16:47] | error writing to main database, errorcode: 0 Exception: name 'strin_fact_topic' is not defined , Level: 0
+INFO - [gpt] [2023-06-27 19:16:55] | !using testmode!
+INFO - [gpt] [2023-06-27 19:16:55] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:16:55] | opening GPT database,
+ERROR - [gpt] [2023-06-27 19:16:55] | error writing to main database, errorcode: 0 Exception: can only concatenate str (not "InterfaceError") to str , Level: 0

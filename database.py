@@ -77,57 +77,72 @@ class Database():
             except mysql.connector.Error as error:
                 return 'null'
 
-    def write(self, data):
-        if self.typ == "main":
+    def write(self, data, writetype):
+        self.writetype = writetype
+        if self.writetype == "main":
             if len(data) == self.main:
                 try:
                     query = "INSERT INTO video (Status, Fakt, Titel, Hashtag, Performance, VideoID, Laenge, MusikID, Url) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
                     self.cursor.executemany(query, data)
                     self.db.commit()
-                    self.logger.info("Data inserted into the " + self.typ + " database successfully.")
+                    self.logger.info("Data inserted into the " + self.writetype + " database successfully.")
+                    return 1
                 except mysql.connector.Error as error:
-                    self.logger.error("Error writing to " + self.typ + " database: " + error)
+                    self.logger.error("Error writing to " + self.writetype + " database: " + error, 3)
+                    return 0
             else:
-                self.logger.error("Data length does not match the expected count for the " + self.typ + " database.")
+                self.logger.error("Data length does not match the expected count for the " + self.writetype + " database.", 3)
+                return 0
 
-        elif self.typ == "stockvideo":
+        elif self.writetype == "stockvideo":
             if len(data) == self.stockvideo:
                 try:
                     query = "INSERT INTO video (Tags, Usecount, Laenge) VALUES (%s, %s, %s)"
                     self.cursor.executemany(query, data)
                     self.db.commit()
-                    self.logger.info("Data inserted into the " + self.typ + " database successfully.")
+                    self.logger.info("Data inserted into the " + self.writetype + " database successfully.")
+                    return 1
                 except mysql.connector.Error as error:
-                    self.logger.error("Error writing to " + self.typ + " database: " + error)
+                    self.logger.error("Error writing to " + self.writetype + " database: " + error, 3)
+                    return 0
             else:
-                self.logger.error("Data length does not match the expected count for the " + self.typ + " database.")
+                self.logger.error("Data length does not match the expected count for the " + self.writetype + " database.", 3)
+                return 0
 
-        elif self.typ == "music":
+        elif self.writetype == "music":
             if len(data) == self.music:
                 try:
                     query = "INSERT INTO video (Tags, Usecount, Laenge) VALUES (%s, %s, %s)"
                     self.cursor.executemany(query, data)
                     self.db.commit()
-                    self.logger.info("Data inserted into the " + self.typ + " database successfully.")
+                    self.logger.info("Data inserted into the " + self.writetype + " database successfully.")
+                    return 1
                 except mysql.connector.Error as error:
-                    self.logger.error("Error writing to " + self.typ + " database: " + error)
+                    self.logger.error("Error writing to " + self.writetype + " database: " + error, 3)
+                    return 0
             else:
-                self.logger.error("Data length does not match the expected count for the " + self.typ + " database.")
+                self.logger.error("Data length does not match the expected count for the " + self.writetype + " database.", 3)
+                return 0
 
-        elif self.typ == "gpt":
+        elif self.writetype == "gpt":
             if len(data) == self.gpt:
                 try:
                     query = "INSERT INTO video (Thema, Score, Uhrzeit) VALUES (%s, %s, %s)"
                     self.cursor.executemany(query, data)
                     self.db.commit()
-                    self.logger.info("Data inserted into the " + self.typ + " database successfully.")
+                    self.logger.info("Data inserted into the " + self.writetype + " database successfully.")
+                    return 1
                 except mysql.connector.Error as error:
-                    self.logger.error("Error writing to " + self.typ + " database: " + error)
+                    self.logger.error("Error writing to " + self.writetype + " database: " + error, 3)
+                    return 0
             else:
-                self.logger.error("Data length does not match the expected count for the " + self.typ + " database.")
+                self.logger.error("Data length does not match the expected count for the " + self.writetype + " database.", 3)
+                return 0
 
         else:
             self.logger.error("Invalid database type.")
+            return 0
+        return 0
 
     def close(self):
         self.cursor.close()

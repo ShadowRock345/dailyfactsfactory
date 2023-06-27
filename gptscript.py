@@ -135,25 +135,35 @@ def getfacts(zuverwendendezeilen,sorted_gptarray):
 
 def writetomaindatabase(fact_list):
     errorvalue = 0
-    i = 0
-    length_fact_list = len(factlist)
-    while x == 0:
-
-
-    while i == 0:
-        try:
-            database.connect()
-            #Status, Fakt, Titel, Hashtag, Performance, VideoID, Laenge, MusikID, Url
-            valuestowrite = ["fact_generated",fact_list,"",None,None,None,None,""]
-            database.write(valuestowrite)
-            database.close()
-            i = 1
-        except:
-            printmsg = 'error writing to main database, errorcode: ' + errorvalue
-            logger.error(printmsg,errorvalue)
-            if errorvalue < 3:
-                errorvalue += 1
-            time.sleep(15)
+    x = 0
+    length_fact_list = len(fact_list)
+    while x < length_fact_list:
+        fact_topic = fact_list[x]
+        x += 1
+        facts = fact_list[x]
+        x += 1
+        i = 0
+        while i == 0:
+            try:
+                database.connect()
+                string_fact_topic = str(fact_topic)
+                string_facts = str(facts)
+                #Status, Fakt, Titel, Hashtag, Performance, VideoID, Laenge, MusikID, Url
+                valuestowrite = ["fact_generated",string_facts,string_fact_topic,None,None,None,None,None,""]
+                databasestatus = database.write(valuestowrite,'main')
+                database.close()
+                if databasestatus == 1:
+                    printmsg = 'facts for: ' + str(fact_topic) + ' were added to the main database'
+                    logger.success(printmsg)
+                    i = 1
+                else:
+                    pytime.sleep(10)
+            except Exception as e:
+                printmsg = 'error writing to main database, errorcode: ' + str(errorvalue) + ' Exception: ' + str(e)
+                logger.error(printmsg,errorvalue)
+                if errorvalue < 3:
+                    errorvalue += 1
+                pytime.sleep(15)
 
 def main():
     values = readvalues()
