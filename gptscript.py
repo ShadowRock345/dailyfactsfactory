@@ -112,8 +112,6 @@ def getfacts(zuverwendendezeilen,sorted_gptarray):
     for element in zuverwendendezeilen:
         topic = sorted_gptarray[element,1]
         prompt = 'Generate ' + str(factcount) + ' short facts to the topic "'+ str(topic) + '" . They should be formated in a list for python.'
-        print(prompt +'\n')
-        input('continue?\n')
         i = 0
         while i == 0:
             try:
@@ -126,8 +124,9 @@ def getfacts(zuverwendendezeilen,sorted_gptarray):
                 logger.error(printmsg,errorlevel)
                 if errorlevel < 3:
                     errorlevel += 1
+                else:
+                    time.sleep()
                 time.sleep(30)
-                
         response_json = json.loads(str(response))
         facts = response_json["choices"][0]["text"]
         fact_list = facts.strip().split("\n")
