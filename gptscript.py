@@ -60,7 +60,7 @@ def readvalues():
     values = 'null' # zuerst auf null setzten
     while values == 'null':
         database.connect() #GPT Database öffnen
-        values = database.getvalues()  #GBT Database Daten auslesen
+        values = database.getvalues()  #GPT Database Daten auslesen
         realtimevalue = realtime()
         database.close() #GPT Database schließen
         if values == 'null':

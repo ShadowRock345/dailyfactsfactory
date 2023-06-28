@@ -88,6 +88,8 @@ class Database():
                     cursor2 = db2.cursor()
                     cursor2.execute(query, querplaceholders)
                     db2.commit()
+                    cursor2.close()
+                    db2.close()
                     self.logger.info("Data inserted into the " + writetype + " database successfully.")
                     return 1
                 except mysql.connector.Error as error:
@@ -100,9 +102,15 @@ class Database():
         elif writetype == "stockvideo":
             if len(data) == self.stockvideo:
                 try:
-                    query = "INSERT INTO video (Tags, Usecount, Laenge) VALUES (%s, %s, %s)"
-                    self.cursor.executemany(query, data)
-                    self.db.commit()
+                    placeholders = '(%s, %s, %s)'
+                    querplaceholders = data
+                    query = f'INSERT INTO video (Tags, Usecount, Laenge) VALUES {placeholders}'
+                    db2 = mysql.connector.connect(host="localhost",user="admin",password="FactsFactoryBotDatabase",database="stockvideodatabase")
+                    cursor2 = db2.cursor()
+                    cursor2.execute(query, querplaceholders)
+                    db2.commit()
+                    cursor2.close()
+                    db2.close()
                     self.logger.info("Data inserted into the " + writetype + " database successfully.")
                     return 1
                 except mysql.connector.Error as error:
@@ -115,9 +123,15 @@ class Database():
         elif writetype == "music":
             if len(data) == self.music:
                 try:
-                    query = "INSERT INTO video (Tags, Usecount, Laenge) VALUES (%s, %s, %s)"
-                    self.cursor.executemany(query, data)
-                    self.db.commit()
+                    placeholders = '(%s, %s, %s)'
+                    querplaceholders = data
+                    query = f'INSERT INTO video (Tags, Usecount, Laenge) VALUES {placeholders}'
+                    db2 = mysql.connector.connect(host="localhost",user="admin",password="FactsFactoryBotDatabase",database="stockmusicdatabase")
+                    cursor2 = db2.cursor()
+                    cursor2.execute(query, querplaceholders)
+                    db2.commit()
+                    cursor2.close()
+                    db2.close()
                     self.logger.info("Data inserted into the " + writetype + " database successfully.")
                     return 1
                 except mysql.connector.Error as error:
@@ -130,9 +144,15 @@ class Database():
         elif writetype == "gpt":
             if len(data) == self.gpt:
                 try:
-                    query = "INSERT INTO video (Thema, Score, Uhrzeit) VALUES (%s, %s, %s)"
-                    self.cursor.executemany(query, data)
-                    self.db.commit()
+                    placeholders = '(%s, %s, %s)'
+                    querplaceholders = data
+                    query = f'INSERT INTO video (Thema, Score, Uhrzeit) VALUES {placeholders}'
+                    db2 = mysql.connector.connect(host="localhost",user="admin",password="FactsFactoryBotDatabase",database="gptdatabase")
+                    cursor2 = db2.cursor()
+                    cursor2.execute(query, querplaceholders)
+                    db2.commit()
+                    cursor2.close()
+                    db2.close()
                     self.logger.info("Data inserted into the " + writetype + " database successfully.")
                     return 1
                 except mysql.connector.Error as error:
