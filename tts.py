@@ -1,6 +1,5 @@
 # credits: https://github.com/oscie57/tiktok-voice
 import threading, requests, base64
-from playsound import playsound
 
 VOICES = [
     # DISNEY VOICES
@@ -89,7 +88,7 @@ def get_api_response() -> requests.Response:
 # saving the audio file
 def save_audio_file(base64_data: str, filename: str = "output.mp3") -> None:
     audio_bytes = base64.b64decode(base64_data)
-    with open(filename, "wb") as file:
+    with open(filename, "w+") as file:
         file.write(audio_bytes)
 
 # send POST request to get the audio data
@@ -177,8 +176,7 @@ def tts(text: str, voice: str = "none", filename: str = "output.mp3", play_sound
 
         save_audio_file(audio_base64_data, filename)
         print(f"Audio file saved successfully as '{filename}'")
-        if play_sound:
-            playsound(filename)
+
 
     except Exception as e:
         print("Error occurred while generating audio:", str(e))

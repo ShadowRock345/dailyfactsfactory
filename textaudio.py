@@ -4,10 +4,13 @@ from logger import Config
 from discord_logger import Discord_logger
 import schedule
 import tts
+import datetime
 import os
 import time as pytime
+import numpy as np
+import ast
 
-global module,voice
+global module,voice,database
 
 def threadstarter():
     threadstarter = 0
@@ -43,7 +46,7 @@ def realtime():
     return now.strftime('%Y-%m-%d %H:%M:%S')
 
 def read_main():
-    global module
+    global module,database
     errorlevel = 0
     values = 0 # zuerst auf null setzten
     while values == 0:
@@ -61,10 +64,30 @@ def read_main():
                 pytime.sleep(120)
                 discord_logger.error(printmsg,module)
         else:
-            printmsg = 'opening ' + str(module) + ' database'
+            printmsg = 'opening main database'
             logger.success(printmsg)
             discord_logger.success(printmsg,module)
     return values
+
+def parse_new_facts(values):
+    facts_to_generate = []
+    array = np.array(values)
+    if len(array) == 0:
+        logger.error('main database is empty',errorlevel = 3)
+        discord_logger.error('main database is empty',module)
+    else:
+        seccond_column = array[:, 1]
+        i = 0
+        for status in seccond_column:
+            if status == 'fact_generated':
+                id = array[i,0]
+                facts = array[i,2]
+                topic = array[i,3]
+                facts_to_generate.append(id)
+                facts_to_generate.append(facts)
+                facts_to_generate.append(topic)
+            i += 1
+    return facts_to_generate
 
 def checkaudiofile(filename):
     folder = "/textaudios"
@@ -76,23 +99,42 @@ def checkaudiofile(filename):
     else:
         return 0
 
-def createaudio(text,filename):
+def createaudio(facts_to_generate):
     global voice
-    tts.tts(text,voice,filename)
+    length_facts_list = len(facts_to_generate)
+    i = 0
+    while i < length_facts_list:
+        mainfilename = facts_to_generate[i]
+        i += 1
+        facts_list = facts_to_generate[i]
+        i += 1
+        topic = facts_to_generate[i]
+        i += 1
+        x = 1
+        facts = ast.literal_eval(facts_list)
+        for fact in facts:
+            filename = "textaudios/" + (mainfilename) + '_' + str(x) + '.mp3'
+            tts.tts(fact,voice,filename)
+            x += 1
+        x = 0
+        filename = str(mainfilename) + '_' + str(x) + '.mp3'
+        text = 'Daily ' + str(topic) + ' facts!'
+        tts.tts(text,voice,filename)
     
-
 def main():
     values = read_main()
-    
+    facts_to_generate =  parse_new_facts(values)
+    if facts_to_generate != []:
+        createaudio(facts_to_generate)
 
 
 discord_logger = Discord_logger()
 config = Config('TEXTAUDIO')
 module = str(config.getvalue('module'))
 schedule.every(5).minutes.do(main)
-database = database(str(config.getvalue('database')))
+database = Database(str(config.getvalue('database')))
 logger = Logger(str(config.getvalue('logger')))
-voice = Logger(str(config.getvalue('voice')))
+voice = str(config.getvalue('voice'))
 
 #threadstarter() #zum test ausgeblendet
 main()
