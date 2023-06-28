@@ -88,7 +88,7 @@ def get_api_response() -> requests.Response:
 # saving the audio file
 def save_audio_file(base64_data: str, filename: str = "output.mp3") -> None:
     audio_bytes = base64.b64decode(base64_data)
-    with open(filename, "w+") as file:
+    with open(filename, "wb") as file:
         file.write(audio_bytes)
 
 # send POST request to get the audio data
@@ -103,9 +103,10 @@ def generate_audio(text: str, voice: str) -> bytes:
 def tts(text: str, voice: str = "none", filename: str = "output.mp3", play_sound: bool = False) -> None:
     # checking if the website is available
     global current_endpoint
-
+    print(text)
     if get_api_response().status_code == 200:
-        print("Service available!")
+        #print("Service available!")\
+        pass
     else:
         current_endpoint = (current_endpoint + 1) % 2
         if get_api_response().status_code == 200:

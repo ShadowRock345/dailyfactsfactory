@@ -122,6 +122,7 @@ def getfacts(zuverwendendezeilen,sorted_gptarray):
         i = 0
         while i == 0:
             try:
+                #Generate three short facts, which aren't too general, for the topic Space. They should all begin with a number, and it is really important that they are formatted in a python list. Don't write any additional explanations.
                 response = openai.Completion.create(model="text-davinci-003",prompt=prompt,temperature=0.2,max_tokens=80)
                 printmsg = 'generated ' + str(factcount) + 'facts for the topic: ' + str(topic)
                 logger.success(printmsg)

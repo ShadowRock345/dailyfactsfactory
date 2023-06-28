@@ -113,13 +113,16 @@ def createaudio(facts_to_generate):
         x = 1
         facts = ast.literal_eval(facts_list)
         for fact in facts:
-            filename = "textaudios/" + (mainfilename) + '_' + str(x) + '.mp3'
+            filename = "textaudios/" + str(mainfilename) + '_' + str(x) + '.mp3'
             tts.tts(fact,voice,filename)
             x += 1
+            #print(fact)
+            #print(filename)
         x = 0
-        filename = str(mainfilename) + '_' + str(x) + '.mp3'
+        filename = "textaudios/" + str(mainfilename) + '_' + str(x) + '.mp3'
         text = 'Daily ' + str(topic) + ' facts!'
         tts.tts(text,voice,filename)
+        #print(text)
     
 def main():
     values = read_main()
