@@ -1,0 +1,54 @@
+INFO - [gpt] [2023-06-28 17:47:08] | !using testmode!
+INFO - [gpt] [2023-06-28 17:48:22] | !using testmode!
+INFO - [gpt] [2023-06-28 17:50:12] | !using testmode!
+INFO - [gpt] [2023-06-28 17:50:12] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-28 17:50:13] | opening GPT database
+INFO - [Database] [2023-06-28 17:50:13] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:50:13] | facts for: 54 were added to the main database
+INFO - [Database] [2023-06-28 17:50:13] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:50:13] | facts for: 55 were added to the main database
+INFO - [Database] [2023-06-28 17:50:13] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:50:13] | facts for: 18 were added to the main database
+INFO - [Database] [2023-06-28 17:50:14] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:50:14] | facts for: 7 were added to the main database
+INFO - [Database] [2023-06-28 17:50:14] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:50:14] | facts for: 24 were added to the main database
+INFO - [gpt] [2023-06-28 17:54:34] | !using testmode!
+INFO - [gpt] [2023-06-28 17:54:35] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-28 17:54:35] | opening GPT database
+INFO - [Database] [2023-06-28 17:54:35] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:54:35] | facts for: 54 were added to the main database
+INFO - [Database] [2023-06-28 17:54:35] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:54:35] | facts for: 55 were added to the main database
+INFO - [Database] [2023-06-28 17:54:37] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:54:37] | facts for: 18 were added to the main database
+INFO - [Database] [2023-06-28 17:54:37] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:54:37] | facts for: 7 were added to the main database
+INFO - [Database] [2023-06-28 17:54:38] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:54:38] | facts for: 24 were added to the main database
+INFO - [gpt] [2023-06-28 17:55:54] | !using testmode!
+INFO - [gpt] [2023-06-28 17:55:54] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-28 17:55:55] | opening GPT database
+INFO - [Database] [2023-06-28 17:55:55] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:55:55] | facts for: 54 were added to the main database
+INFO - [Database] [2023-06-28 17:55:55] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:55:55] | facts for: 55 were added to the main database
+INFO - [Database] [2023-06-28 17:55:55] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:55:55] | facts for: 18 were added to the main database
+INFO - [Database] [2023-06-28 17:55:56] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:55:56] | facts for: 7 were added to the main database
+INFO - [Database] [2023-06-28 17:55:56] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:55:56] | facts for: 24 were added to the main database
+INFO - [gpt] [2023-06-28 17:56:17] | !using testmode!
+INFO - [gpt] [2023-06-28 17:56:18] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-28 17:56:18] | opening GPT database
+INFO - [Database] [2023-06-28 17:56:18] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:56:18] | facts for: 54 were added to the main database
+INFO - [Database] [2023-06-28 17:56:19] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:56:19] | facts for: 55 were added to the main database
+INFO - [Database] [2023-06-28 17:56:19] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:56:19] | facts for: 18 were added to the main database
+INFO - [Database] [2023-06-28 17:56:19] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:56:19] | facts for: 7 were added to the main database
+INFO - [Database] [2023-06-28 17:56:20] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-28 17:56:20] | facts for: 24 were added to the main database

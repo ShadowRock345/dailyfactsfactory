@@ -10,37 +10,38 @@ discord_new_video_webhook = str(config.getvalue('discord_new_video_webhook'))
 discord_analytic_webhook = str(config.getvalue('discord_analytic_webhook'))
 
 class Discord_logger():
-    def __ini_(self):
+    def __init__(self):
         self.errorlevel = 0
+        self.logger = Logger("discord_logger")
 
-    def realtime():
+    def realtime(self):
         now = datetime.datetime.now()
         return now.strftime('%Y-%m-%d %H:%M:%S')
 
-    def error(self, data):
+    def error(self, data, script):
         try:
-            webhook = DiscordWebhook(url=discord_error_webhook, content=f'{self.realtime()}, ' + str(data))
+            webhook = DiscordWebhook(url=discord_error_webhook, content=f'{self.realtime()}|' + str(script) + '| ' + str(data))
             response = webhook.execute()
         except:
-            logger.error(printmsg = 'failed sending discord error webhook',errorlevel)
+            self.logger.error('failed sending discord error webhook',self.errorlevel)
 
-    def success(self, data):
+    def success(self, data, script):
         try:
-            webhook = DiscordWebhook(url=discord_success_webhook, content=f'{self.realtime()}, ' + str(data))
+            webhook = DiscordWebhook(url=discord_success_webhook, content=f'{self.realtime()} |' + str(script) + '| ' + str(data))
             response = webhook.execute()
         except:
-            logger.error(printmsg = 'failed sending discord success webhook',errorlevel)
+            self.logger.error('failed sending discord success webhook',self.errorlevel)
 
-    def new_video(self, data):
+    def new_video(self, data, script):
         try:
-            webhook = DiscordWebhook(url=discord_new_video_webhook, content=f'{self.realtime()}, ' + str(data))
+            webhook = DiscordWebhook(url=discord_new_video_webhook, content=f'{self.realtime()} |' + str(script) + '| ' + str(data))
             response = webhook.execute()
         except:
-            logger.error(printmsg = 'failed sending discord new_video webhook',errorlevel)
+            self.logger.error('failed sending discord new_video webhook',self.errorlevel)
 
-    def analytic(self, data):
+    def analytic(self, data, script):
         try:
-            webhook = DiscordWebhook(url=discord_analytic_webhook, content=f'{self.realtime()}, ' + str(data))
+            webhook = DiscordWebhook(url=discord_analytic_webhook, content=f'{self.realtime()} |' + str(script) + '| ' + str(data))
             response = webhook.execute()
         except:
-            logger.error(printmsg = 'failed sending discord analytic webhook',errorlevel)
+            self.logger.error('failed sending discord analytic webhook',self.errorlevel)

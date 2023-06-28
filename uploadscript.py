@@ -20,27 +20,27 @@ TOKEN_PATH = 'credentials.pickle'
 # Berechtigungsbereiche für die YouTube Data API
 SCOPES = ['https://www.googleapis.com/auth/youtube.upload']
 
-# Überprüfen, ob Anmeldeinformationen bereits vorhanden sind
-if os.path.exists(TOKEN_PATH):
-    with open(TOKEN_PATH, 'rb') as token:
-        credentials = pickle.load(token)
-else:
-    # Erstellen Sie eine neue Instanz des InstalledAppFlow-Objekts
-    flow = InstalledAppFlow.from_client_secrets_file('secret.json', SCOPES)
-
-    # Führen Sie den Autorisierungsfluss durch
-    credentials = flow.run_local_server(port=0)
-
-    # Speichern Sie die Anmeldeinformationen in der Datei
-    with open(TOKEN_PATH, 'wb') as token:
-        pickle.dump(credentials, token)
+# # Überprüfen, ob Anmeldeinformationen bereits vorhanden sind
+# if os.path.exists(TOKEN_PATH):
+#     with open(TOKEN_PATH, 'rb') as token:
+#         credentials = pickle.load(token)
+# else:
+#     # Erstellen Sie eine neue Instanz des InstalledAppFlow-Objekts
+#     flow = InstalledAppFlow.from_client_secrets_file('secret.json', SCOPES)
+#
+#     # Führen Sie den Autorisierungsfluss durch
+#     credentials = flow.run_local_server(port=0)
+#
+#     # Speichern Sie die Anmeldeinformationen in der Datei
+#     with open(TOKEN_PATH, 'wb') as token:
+#         pickle.dump(credentials, token)
 
 # Verwenden Sie die Anmeldeinformationen, um die YouTube API zu initialisieren und Aktionen auszuführen
 youtube = build('youtube', 'v3', credentials=credentials)
 
 global module,errorlevel,videos
 
-def upoload(video_path, title, description, tags, categoryID, privacy):
+def upoloadyoutube(video_path, title, description, tags, categoryID, privacy):
     #tags should be a list
     #privacy: public, unlisted, private
     video_path = video_path

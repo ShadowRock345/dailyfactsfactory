@@ -20,9 +20,11 @@ def configloader():
     if testmode == True:
         printmsg = '!using testmode!'
         logger.success(printmsg)
+        discord_logger.success(printmsg,module)
     realtimevalue = realtime()
     printmsg = 'loading configs: ' + str(module) + '|' + str(time) + '|' + str(testmode) + '|' + str(factcount)
     logger.success(printmsg)
+    discord_logger.success(printmsg,module)
 
 def threadstarter():
     threadstarter = 0
@@ -39,6 +41,7 @@ def threadstarter():
             if errorlevel < 3:
                 errorlevel += 1
             else:
+                discord_logger.error(printmsg,module)
                 pytime.sleep(120)
 
 def timecheck():
@@ -47,6 +50,7 @@ def timecheck():
     printmsg =  'starting gpt timecheck'
     realtimevalue = realtime()
     logger.success(printmsg)
+    discord_logger.success(printmsg,module)
     while True:
         schedule.run_pending()
         pytime.sleep(1)
@@ -72,8 +76,10 @@ def readvalues():
                 errorlevel += 1
             else:
                 pytime.sleep(120)
+                discord_logger.error(printmsg,module)
         printmsg = 'opening ' + str(module) + ' database'
         logger.success(printmsg)
+        discord_logger.success(printmsg,module)
     return values
 
 def converttoarray(values):
@@ -118,6 +124,7 @@ def getfacts(zuverwendendezeilen,sorted_gptarray):
                 response = openai.Completion.create(model="text-davinci-003",prompt=prompt,temperature=0.2,max_tokens=80)
                 printmsg = 'generated ' + str(factcount) + 'facts for the topic: ' + str(topic)
                 logger.success(printmsg)
+                discord_logger.success(printmsg,module)
                 i = 1
             except:
                 printmsg = 'error generating ' + str(factcount) + ' facts for the topic: ' + str(topic) + ' | error code: ' + str(response.status_code)
@@ -125,6 +132,7 @@ def getfacts(zuverwendendezeilen,sorted_gptarray):
                 if errorlevel < 3:
                     errorlevel += 1
                 else:
+                    discord_logger.error(printmsg,module)
                     time.sleep(600)
                 time.sleep(30)
         response_json = json.loads(str(response))
@@ -156,6 +164,7 @@ def writetomaindatabase(fact_list):
                 if databasestatus == 1:
                     printmsg = 'facts for: ' + str(fact_topic) + ' were added to the main database'
                     logger.success(printmsg)
+                    discord_logger.success(printmsg,module)
                     i = 1
                 else:
                     pytime.sleep(10)
@@ -164,6 +173,8 @@ def writetomaindatabase(fact_list):
             #     logger.error(printmsg,errorvalue)
             #     if errorvalue < 3:
             #         errorvalue += 1
+            #     else:
+            #       discord_logger.error(printmsg,module)
             #     pytime.sleep(15)
 
 def main():
@@ -183,6 +194,7 @@ time = str(config.getvalue('time'))
 videocount = int(config.getothervalue('UPLOAD', 'count'))
 database = Database(str(config.getvalue('database')))
 logger = Logger(str(config.getvalue('logger')))
+discord_logger = Discord_logger()
 openaiorganization = str(config.getvalue('openaiorganization'))
 openaiapi_key = str(config.getvalue('openaiapi_key'))
 factcount = str(config.getvalue('factcount'))
