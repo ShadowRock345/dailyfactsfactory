@@ -118,11 +118,11 @@ def realtime():
 
 def readvalues():
     global module,errorlevel,videos
-    path = str("videos/") + str(videos[0]) + str(".mp4")
-    vurl = upoload(path, str(videos[0]), str(videos[0]), ["#shorts","cool"], 21, "unlisted")
-    webhook = DiscordWebhook(url='https://canary.discord.com/api/webhooks/1122554218520264714/PW8FGYZyJRJQ0Y8YBGnYBI1b_Wxh2RaV9SJHzhooVgPhWh_E0zRfJ3xG6TEjnrr8FHnf', content='I am uploading a Video. {realtime()}, {vurl}')
-    response = webhook.execute()
-    videos.pop(0)
+    #path = str("videos/") + str(videos[0]) + str(".mp4")
+    #vurl = upoload(path, str(videos[0]), str(videos[0]), ["#shorts","cool"], 21, "unlisted")
+    #webhook = DiscordWebhook(url='https://canary.discord.com/api/webhooks/1122554218520264714/PW8FGYZyJRJQ0Y8YBGnYBI1b_Wxh2RaV9SJHzhooVgPhWh_E0zRfJ3xG6TEjnrr8FHnf', content='I am uploading a Video. {realtime()}, {vurl}')
+    #response = webhook.execute()
+    #videos.pop(0)
     return 0
 
 def main():

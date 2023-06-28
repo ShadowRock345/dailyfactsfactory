@@ -10,6 +10,7 @@ import random
 import os
 import openai
 import json
+from discord_logger import Discord_logger
 
 global module,errorlevel,videocount,openaiorganizationm,openaiapi_key,factcount,testmode
 
