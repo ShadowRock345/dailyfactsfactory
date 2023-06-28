@@ -36,7 +36,7 @@ class Database():
                 return result
 
             except mysql.connector.Error as error:
-                return 'null'
+                return 0
 
         elif self.typ == "stockvideo":
             try:
@@ -46,7 +46,7 @@ class Database():
                 return result
 
             except mysql.connector.Error as error:
-                return 'null'
+                return 0
 
         elif self.typ == "music":
             try:
@@ -56,7 +56,7 @@ class Database():
                 return result
 
             except mysql.connector.Error as error:
-                return 'null'
+                return 0
 
         elif self.typ == "gpt":
             try:
@@ -66,7 +66,7 @@ class Database():
                 return result
 
             except mysql.connector.Error as error:
-                return 'null'
+                return 0
         else:
             try:
                 query = "SELECT * FROM main"
@@ -75,7 +75,7 @@ class Database():
                 return result
 
             except mysql.connector.Error as error:
-                return 'null'
+                return 0
 
     def write(self, data, writetype):
         if writetype == "main":

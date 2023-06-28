@@ -62,13 +62,13 @@ def realtime():
 def readvalues():
     global module
     errorlevel = 0
-    values = 'null' # zuerst auf null setzten
-    while values == 'null':
+    values = 0 # zuerst auf null setzten
+    while values == 0:
         database.connect() #GPT Database öffnen
         values = database.getvalues()  #GPT Database Daten auslesen
         realtimevalue = realtime()
         database.close() #GPT Database schließen
-        if values == 'null':
+        if values == 0:
             printmsg = 'failed to open ' + module + ' database'
             logger.error(printmsg,errorlevel)
             realtimevalue = realtime()
@@ -77,9 +77,10 @@ def readvalues():
             else:
                 pytime.sleep(120)
                 discord_logger.error(printmsg,module)
-        printmsg = 'opening ' + str(module) + ' database'
-        logger.success(printmsg)
-        discord_logger.success(printmsg,module)
+        else:
+            printmsg = 'opening ' + str(module) + ' database'
+            logger.success(printmsg)
+            discord_logger.success(printmsg,module)
     return values
 
 def converttoarray(values):

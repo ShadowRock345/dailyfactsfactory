@@ -14,6 +14,8 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from google.oauth2.credentials import Credentials
 import pickle
+from discord_logger import Discord_logger
+import requests
 
 TOKEN_PATH = 'credentials.pickle'
 
@@ -39,6 +41,8 @@ SCOPES = ['https://www.googleapis.com/auth/youtube.upload']
 youtube = build('youtube', 'v3', credentials=credentials)
 
 global module,errorlevel,videos
+
+graph_url = 'https://graph.facebook.com/v17.0'
 
 def upoloadyoutube(video_path, title, description, tags, categoryID, privacy):
     #tags should be a list
@@ -77,6 +81,48 @@ def upoloadyoutube(video_path, title, description, tags, categoryID, privacy):
     video_url = "https://www.youtube.com/shorts/" + response["id"]
 
     return video_url
+
+def uploadinstagramm(caption='', media_type='', share_to_feed='', thumb_offset='',video_url='',access_token = '',instagram_account_id):
+    url = graph_url + instagram_account_id + '/media'
+    param = dict()
+    param['access_token'] = access_token
+    param['caption'] = caption
+    param['media_type'] = media_type
+    param['share_to_feed'] = share_to_feed
+    param['thumb_offset'] = thumb_offset
+    param['video_url'] = video_url
+    response = requests.post(url,params=param)
+    #log response
+    reponse = response.json()
+    logger.info(str(response))
+    discord_logger.success(str(response),"UPLOAD")
+    return response
+
+def uploadinstagramm(ig_container_id = '', access_token=''):
+    url = graph.url + ig_container_id
+    param = {}
+    param['access_token'] = access_token
+    param['fields'] = 'status_code'
+    response = requests.get(url,param=param)
+    reponse = response.json()
+    logger.info(str(response))
+    discord_logger.success(str(response),"UPLOAD")
+    return response
+
+def publish_container(creation_id = '',access_token = '',instagram_account_id=''):
+    url = graph_url + instagram_account_id + '/media_publish'
+    param = dict()
+    param['access_token'] = access_token
+    param['creation_id'] = creation_id
+    response = requests.post(url,params=param)
+    response = response.json()
+    logger.info(str(response))
+    discord_logger.success(str(response),"UPLOAD")
+    return response
+
+#1.uploadinstagramm
+#2.uploadinstagramm (solange warten bis "status_code": "FINISHED" in antwort, auslesen
+#3.publish_container
 
 def configloader():
     realtimevalue = realtime()
@@ -151,6 +197,7 @@ module = str(config.getvalue('module'))
 count = int(config.getvalue('count'))
 database = Database(str(config.getvalue('database')))
 logger = Logger(str(config.getvalue('logger')))
+discord_logger = Discord_logger()
 
 videos = [1,2,3,4,5]
 
