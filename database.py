@@ -78,65 +78,68 @@ class Database():
                 return 'null'
 
     def write(self, data, writetype):
-        self.writetype = writetype
-        if self.writetype == "main":
+        if writetype == "main":
             if len(data) == self.main:
                 try:
-                    query = "INSERT INTO video (Status, Fakt, Titel, Hashtag, Performance, VideoID, Laenge, MusikID, Url) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
-                    self.cursor.executemany(query, data)
-                    self.db.commit()
-                    self.logger.info("Data inserted into the " + self.writetype + " database successfully.")
+                    placeholders = '(%s, %s, %s, %s, %s, %s, %s, %s, %s)'
+                    querplaceholders = data
+                    query = f'INSERT INTO video (Status, Fakt, Titel, Hashtags, Performance, VideoID, Laenge, MusikID, Url) VALUES {placeholders}'
+                    db2 = mysql.connector.connect(host="localhost",user="admin",password="FactsFactoryBotDatabase",database="maindatabase")
+                    cursor2 = db2.cursor()
+                    cursor2.execute(query, querplaceholders)
+                    db2.commit()
+                    self.logger.info("Data inserted into the " + writetype + " database successfully.")
                     return 1
                 except mysql.connector.Error as error:
-                    self.logger.error("Error writing to " + self.writetype + " database: " + error, 3)
+                    self.logger.error("Error writing to " + writetype + " database: " + str(error), 3)
                     return 0
             else:
-                self.logger.error("Data length does not match the expected count for the " + self.writetype + " database.", 3)
+                self.logger.error("Data length does not match the expected count for the " + writetype + " database.", 3)
                 return 0
 
-        elif self.writetype == "stockvideo":
+        elif writetype == "stockvideo":
             if len(data) == self.stockvideo:
                 try:
                     query = "INSERT INTO video (Tags, Usecount, Laenge) VALUES (%s, %s, %s)"
                     self.cursor.executemany(query, data)
                     self.db.commit()
-                    self.logger.info("Data inserted into the " + self.writetype + " database successfully.")
+                    self.logger.info("Data inserted into the " + writetype + " database successfully.")
                     return 1
                 except mysql.connector.Error as error:
-                    self.logger.error("Error writing to " + self.writetype + " database: " + error, 3)
+                    self.logger.error("Error writing to " + writetype + " database: " + error, 3)
                     return 0
             else:
-                self.logger.error("Data length does not match the expected count for the " + self.writetype + " database.", 3)
+                self.logger.error("Data length does not match the expected count for the " + writetype + " database.", 3)
                 return 0
 
-        elif self.writetype == "music":
+        elif writetype == "music":
             if len(data) == self.music:
                 try:
                     query = "INSERT INTO video (Tags, Usecount, Laenge) VALUES (%s, %s, %s)"
                     self.cursor.executemany(query, data)
                     self.db.commit()
-                    self.logger.info("Data inserted into the " + self.writetype + " database successfully.")
+                    self.logger.info("Data inserted into the " + writetype + " database successfully.")
                     return 1
                 except mysql.connector.Error as error:
-                    self.logger.error("Error writing to " + self.writetype + " database: " + error, 3)
+                    self.logger.error("Error writing to " + writetype + " database: " + error, 3)
                     return 0
             else:
-                self.logger.error("Data length does not match the expected count for the " + self.writetype + " database.", 3)
+                self.logger.error("Data length does not match the expected count for the " + writetype + " database.", 3)
                 return 0
 
-        elif self.writetype == "gpt":
+        elif writetype == "gpt":
             if len(data) == self.gpt:
                 try:
                     query = "INSERT INTO video (Thema, Score, Uhrzeit) VALUES (%s, %s, %s)"
                     self.cursor.executemany(query, data)
                     self.db.commit()
-                    self.logger.info("Data inserted into the " + self.writetype + " database successfully.")
+                    self.logger.info("Data inserted into the " + writetype + " database successfully.")
                     return 1
                 except mysql.connector.Error as error:
-                    self.logger.error("Error writing to " + self.writetype + " database: " + error, 3)
+                    self.logger.error("Error writing to " + writetype + " database: " + error, 3)
                     return 0
             else:
-                self.logger.error("Data length does not match the expected count for the " + self.writetype + " database.", 3)
+                self.logger.error("Data length does not match the expected count for the " + writetype + " database.", 3)
                 return 0
 
         else:

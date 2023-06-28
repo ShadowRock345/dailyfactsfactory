@@ -252,3 +252,239 @@ INFO - [gpt] [2023-06-27 19:16:55] | !using testmode!
 INFO - [gpt] [2023-06-27 19:16:55] | loading configs: GPT|16:54|True|three
 INFO - [gpt] [2023-06-27 19:16:55] | opening GPT database,
 ERROR - [gpt] [2023-06-27 19:16:55] | error writing to main database, errorcode: 0 Exception: can only concatenate str (not "InterfaceError") to str , Level: 0
+INFO - [gpt] [2023-06-27 19:21:27] | !using testmode!
+INFO - [gpt] [2023-06-27 19:21:27] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:21:27] | opening GPT database,
+INFO - [gpt] [2023-06-27 19:22:17] | !using testmode!
+INFO - [gpt] [2023-06-27 19:22:17] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:22:17] | opening GPT database,
+INFO - [gpt] [2023-06-27 19:22:53] | !using testmode!
+INFO - [gpt] [2023-06-27 19:22:53] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:22:53] | opening GPT database,
+INFO - [gpt] [2023-06-27 19:23:01] | !using testmode!
+INFO - [gpt] [2023-06-27 19:23:01] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:23:01] | opening GPT database,
+INFO - [gpt] [2023-06-27 19:23:16] | !using testmode!
+INFO - [gpt] [2023-06-27 19:23:16] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:23:16] | opening GPT database,
+INFO - [gpt] [2023-06-27 19:25:51] | !using testmode!
+INFO - [gpt] [2023-06-27 19:25:51] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:25:51] | opening GPT database,
+ERROR - [Database] [2023-06-27 19:25:51] | Error writing to main database: Failed executing the operation; Could not process parameters: str(fact_generated), it must be of type list, tuple or dict , Level: 3
+ERROR - [Database] [2023-06-27 19:26:01] | Error writing to main database: Failed executing the operation; Could not process parameters: str(fact_generated), it must be of type list, tuple or dict , Level: 3
+INFO - [gpt] [2023-06-27 19:28:00] | !using testmode!
+INFO - [gpt] [2023-06-27 19:28:00] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:28:00] | opening GPT database
+ERROR - [Database] [2023-06-27 19:28:00] | Error writing to main database: Failed executing the operation; Could not process parameters: str(fact_generated), it must be of type list, tuple or dict , Level: 3
+INFO - [gpt] [2023-06-27 19:28:48] | !using testmode!
+INFO - [gpt] [2023-06-27 19:28:48] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:28:48] | opening GPT database
+INFO - [gpt] [2023-06-27 19:29:08] | !using testmode!
+INFO - [gpt] [2023-06-27 19:29:08] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:29:08] | opening GPT database
+ERROR - [Database] [2023-06-27 19:29:08] | Error writing to main database: Failed executing the operation; Could not process parameters: str(fact_generated), it must be of type list, tuple or dict , Level: 3
+ERROR - [Database] [2023-06-27 19:29:18] | Error writing to main database: Failed executing the operation; Could not process parameters: str(fact_generated), it must be of type list, tuple or dict , Level: 3
+ERROR - [Database] [2023-06-27 19:29:28] | Error writing to main database: Failed executing the operation; Could not process parameters: str(fact_generated), it must be of type list, tuple or dict , Level: 3
+ERROR - [Database] [2023-06-27 19:29:38] | Error writing to main database: Failed executing the operation; Could not process parameters: str(fact_generated), it must be of type list, tuple or dict , Level: 3
+INFO - [gpt] [2023-06-27 19:29:44] | !using testmode!
+INFO - [gpt] [2023-06-27 19:29:44] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:29:44] | opening GPT database
+ERROR - [Database] [2023-06-27 19:29:44] | Error writing to main database: Failed executing the operation; Not enough parameters for the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 19:31:44] | !using testmode!
+INFO - [gpt] [2023-06-27 19:31:44] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:31:44] | opening GPT database
+INFO - [gpt] [2023-06-27 19:32:49] | !using testmode!
+INFO - [gpt] [2023-06-27 19:32:49] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:32:49] | opening GPT database
+ERROR - [Database] [2023-06-27 19:32:49] | Error writing to main database: Failed executing the operation; Python type list cannot be converted , Level: 3
+ERROR - [Database] [2023-06-27 19:32:59] | Error writing to main database: Failed executing the operation; Python type list cannot be converted , Level: 3
+INFO - [gpt] [2023-06-27 19:33:10] | !using testmode!
+INFO - [gpt] [2023-06-27 19:33:10] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:33:10] | opening GPT database
+ERROR - [Database] [2023-06-27 19:33:10] | Error writing to main database: Failed executing the operation; Not enough parameters for the SQL statement , Level: 3
+ERROR - [Database] [2023-06-27 19:33:20] | Error writing to main database: Failed executing the operation; Not enough parameters for the SQL statement , Level: 3
+ERROR - [Database] [2023-06-27 19:33:30] | Error writing to main database: Failed executing the operation; Not enough parameters for the SQL statement , Level: 3
+ERROR - [Database] [2023-06-27 19:33:40] | Error writing to main database: Failed executing the operation; Not enough parameters for the SQL statement , Level: 3
+ERROR - [Database] [2023-06-27 19:33:50] | Error writing to main database: Failed executing the operation; Not enough parameters for the SQL statement , Level: 3
+ERROR - [Database] [2023-06-27 19:34:00] | Error writing to main database: Failed executing the operation; Not enough parameters for the SQL statement , Level: 3
+ERROR - [Database] [2023-06-27 19:34:10] | Error writing to main database: Failed executing the operation; Not enough parameters for the SQL statement , Level: 3
+ERROR - [Database] [2023-06-27 19:34:20] | Error writing to main database: Failed executing the operation; Not enough parameters for the SQL statement , Level: 3
+ERROR - [Database] [2023-06-27 19:34:30] | Error writing to main database: Failed executing the operation; Not enough parameters for the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 19:34:40] | !using testmode!
+INFO - [gpt] [2023-06-27 19:34:40] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:34:40] | opening GPT database
+ERROR - [Database] [2023-06-27 19:34:40] | Error writing to main database: Failed executing the operation; Not enough parameters for the SQL statement , Level: 3
+ERROR - [Database] [2023-06-27 19:34:50] | Error writing to main database: Failed executing the operation; Not enough parameters for the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 19:34:52] | !using testmode!
+INFO - [gpt] [2023-06-27 19:34:52] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 19:34:52] | opening GPT database
+INFO - [gpt] [2023-06-27 20:02:31] | !using testmode!
+INFO - [gpt] [2023-06-27 20:02:31] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:02:31] | opening GPT database
+INFO - [gpt] [2023-06-27 20:03:22] | !using testmode!
+INFO - [gpt] [2023-06-27 20:03:22] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:03:22] | opening GPT database
+INFO - [gpt] [2023-06-27 20:03:58] | !using testmode!
+INFO - [gpt] [2023-06-27 20:03:58] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:03:58] | opening GPT database
+INFO - [gpt] [2023-06-27 20:04:01] | !using testmode!
+INFO - [gpt] [2023-06-27 20:04:01] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:04:01] | opening GPT database
+INFO - [gpt] [2023-06-27 20:04:47] | !using testmode!
+INFO - [gpt] [2023-06-27 20:04:47] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:04:47] | opening GPT database
+INFO - [gpt] [2023-06-27 20:05:03] | !using testmode!
+INFO - [gpt] [2023-06-27 20:05:03] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:05:03] | opening GPT database
+ERROR - [Database] [2023-06-27 20:05:03] | Error writing to main database: Not all parameters were used in the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 20:06:06] | !using testmode!
+INFO - [gpt] [2023-06-27 20:06:06] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:06:06] | opening GPT database
+ERROR - [Database] [2023-06-27 20:06:06] | Data length does not match the expected count for the main database. , Level: 3
+INFO - [gpt] [2023-06-27 20:06:18] | !using testmode!
+INFO - [gpt] [2023-06-27 20:06:18] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:06:18] | opening GPT database
+ERROR - [Database] [2023-06-27 20:06:18] | Error writing to main database: Not all parameters were used in the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 20:08:58] | !using testmode!
+INFO - [gpt] [2023-06-27 20:08:58] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:08:58] | opening GPT database
+ERROR - [Database] [2023-06-27 20:08:58] | Error writing to main database: Not all parameters were used in the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 20:09:33] | !using testmode!
+INFO - [gpt] [2023-06-27 20:09:33] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:09:33] | opening GPT database
+ERROR - [Database] [2023-06-27 20:09:33] | Error writing to main database: Not all parameters were used in the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 20:09:52] | !using testmode!
+INFO - [gpt] [2023-06-27 20:09:52] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:09:52] | opening GPT database
+ERROR - [Database] [2023-06-27 20:09:52] | Error writing to main database: Not all parameters were used in the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 20:10:25] | !using testmode!
+INFO - [gpt] [2023-06-27 20:10:25] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:10:25] | opening GPT database
+ERROR - [Database] [2023-06-27 20:10:25] | Error writing to main database: Not all parameters were used in the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 20:11:03] | !using testmode!
+INFO - [gpt] [2023-06-27 20:11:03] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:11:03] | opening GPT database
+ERROR - [Database] [2023-06-27 20:11:03] | Error writing to main database: Not all parameters were used in the SQL statement , Level: 3
+ERROR - [Database] [2023-06-27 20:11:13] | Error writing to main database: Not all parameters were used in the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 20:12:32] | !using testmode!
+INFO - [gpt] [2023-06-27 20:12:32] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:12:32] | opening GPT database
+ERROR - [Database] [2023-06-27 20:12:32] | Error writing to main database: Not all parameters were used in the SQL statement , Level: 3
+ERROR - [Database] [2023-06-27 20:12:42] | Error writing to main database: Not all parameters were used in the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 20:12:58] | !using testmode!
+INFO - [gpt] [2023-06-27 20:12:58] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:12:58] | opening GPT database
+INFO - [gpt] [2023-06-27 20:13:47] | !using testmode!
+INFO - [gpt] [2023-06-27 20:13:47] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:13:47] | opening GPT database
+ERROR - [Database] [2023-06-27 20:13:47] | Error writing to main database: Not all parameters were used in the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 20:15:01] | !using testmode!
+INFO - [gpt] [2023-06-27 20:15:01] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:15:01] | opening GPT database
+ERROR - [Database] [2023-06-27 20:15:01] | Error writing to main database: 1146 (42S02): Table 'gptdatabase.video' doesn't exist , Level: 3
+INFO - [gpt] [2023-06-27 20:15:18] | !using testmode!
+INFO - [gpt] [2023-06-27 20:15:18] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:15:18] | opening GPT database
+INFO - [gpt] [2023-06-27 20:15:25] | !using testmode!
+INFO - [gpt] [2023-06-27 20:15:25] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:15:25] | opening GPT database
+ERROR - [Database] [2023-06-27 20:15:25] | Error writing to main database: 1146 (42S02): Table 'gptdatabase.video' doesn't exist , Level: 3
+INFO - [gpt] [2023-06-27 20:15:56] | !using testmode!
+INFO - [gpt] [2023-06-27 20:15:56] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:15:56] | opening GPT database
+ERROR - [Database] [2023-06-27 20:15:56] | Error writing to main database: Not all parameters were used in the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 20:17:34] | !using testmode!
+INFO - [gpt] [2023-06-27 20:17:34] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:17:34] | opening GPT database
+ERROR - [Database] [2023-06-27 20:17:34] | Error writing to main database: Not all parameters were used in the SQL statement , Level: 3
+INFO - [gpt] [2023-06-27 20:17:50] | !using testmode!
+INFO - [gpt] [2023-06-27 20:17:50] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:17:50] | opening GPT database
+ERROR - [Database] [2023-06-27 20:17:50] | Error writing to main database: 1146 (42S02): Table 'gptdatabase.video' doesn't exist , Level: 3
+INFO - [gpt] [2023-06-27 20:18:29] | !using testmode!
+INFO - [gpt] [2023-06-27 20:18:29] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:18:29] | opening GPT database
+ERROR - [Database] [2023-06-27 20:18:29] | Error writing to main database: 1146 (42S02): Table 'gptdatabase.video' doesn't exist , Level: 3
+INFO - [gpt] [2023-06-27 20:20:56] | !using testmode!
+INFO - [gpt] [2023-06-27 20:20:56] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:20:56] | opening GPT database
+ERROR - [Database] [2023-06-27 20:20:56] | Error writing to main database: 1146 (42S02): Table 'gptdatabase.video' doesn't exist , Level: 3
+INFO - [gpt] [2023-06-27 20:21:08] | !using testmode!
+INFO - [gpt] [2023-06-27 20:21:08] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:21:08] | opening GPT database
+INFO - [gpt] [2023-06-27 20:21:19] | !using testmode!
+INFO - [gpt] [2023-06-27 20:21:19] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:21:19] | opening GPT database
+ERROR - [Database] [2023-06-27 20:21:19] | Error writing to main database: 1054 (42S22): Unknown column 'None' in 'field list' , Level: 3
+INFO - [gpt] [2023-06-27 20:24:42] | !using testmode!
+INFO - [gpt] [2023-06-27 20:24:42] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:24:42] | opening GPT database
+ERROR - [Database] [2023-06-27 20:24:42] | Error writing to main database: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' , , , 0, 0, 0, 0, )' at line 1 , Level: 3
+INFO - [gpt] [2023-06-27 20:24:58] | !using testmode!
+INFO - [gpt] [2023-06-27 20:24:58] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:24:58] | opening GPT database
+ERROR - [Database] [2023-06-27 20:24:58] | Error writing to main database: 1054 (42S22): Unknown column 't' in 'field list' , Level: 3
+INFO - [gpt] [2023-06-27 20:25:09] | !using testmode!
+INFO - [gpt] [2023-06-27 20:25:09] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:25:09] | opening GPT database
+ERROR - [Database] [2023-06-27 20:25:09] | Error writing to main database: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '['1. Jazz is a genre of music that originated in the late 19th and early 20th...' at line 1 , Level: 3
+ERROR - [Database] [2023-06-27 20:25:19] | Error writing to main database: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '['1. Jazz is a genre of music that originated in the late 19th and early 20th...' at line 1 , Level: 3
+ERROR - [Database] [2023-06-27 20:25:29] | Error writing to main database: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '['1. Jazz is a genre of music that originated in the late 19th and early 20th...' at line 1 , Level: 3
+ERROR - [Database] [2023-06-27 20:25:39] | Error writing to main database: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '['1. Jazz is a genre of music that originated in the late 19th and early 20th...' at line 1 , Level: 3
+ERROR - [Database] [2023-06-27 20:25:49] | Error writing to main database: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '['1. Jazz is a genre of music that originated in the late 19th and early 20th...' at line 1 , Level: 3
+ERROR - [Database] [2023-06-27 20:25:59] | Error writing to main database: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '['1. Jazz is a genre of music that originated in the late 19th and early 20th...' at line 1 , Level: 3
+ERROR - [Database] [2023-06-27 20:26:09] | Error writing to main database: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '['1. Jazz is a genre of music that originated in the late 19th and early 20th...' at line 1 , Level: 3
+INFO - [gpt] [2023-06-27 20:26:15] | !using testmode!
+INFO - [gpt] [2023-06-27 20:26:15] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:26:15] | opening GPT database
+ERROR - [Database] [2023-06-27 20:26:15] | Error writing to main database: Could not process parameters: str((%s, %s, %s, %s, %s, %s, %s, %s, %s)), it must be of type list, tuple or dict , Level: 3
+INFO - [gpt] [2023-06-27 20:26:48] | !using testmode!
+INFO - [gpt] [2023-06-27 20:26:48] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:26:48] | opening GPT database
+ERROR - [Database] [2023-06-27 20:26:48] | Error writing to main database: Could not process parameters: str((%s, %s, %s, %s, %s, %s, %s, %s, %s)), it must be of type list, tuple or dict , Level: 3
+INFO - [gpt] [2023-06-27 20:28:11] | !using testmode!
+INFO - [gpt] [2023-06-27 20:28:11] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:28:11] | opening GPT database
+ERROR - [Database] [2023-06-27 20:28:11] | Error writing to main database: Could not process parameters: str((%s, %s, %s, %s, %s, %s, %s, %s, %s)), it must be of type list, tuple or dict , Level: 3
+INFO - [gpt] [2023-06-27 20:28:22] | !using testmode!
+INFO - [gpt] [2023-06-27 20:28:22] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:28:22] | opening GPT database
+ERROR - [Database] [2023-06-27 20:28:22] | Error writing to main database: Could not process parameters: str((None, None, None, None, None, None, None, None, None)), it must be of type list, tuple or dict , Level: 3
+INFO - [gpt] [2023-06-27 20:28:45] | !using testmode!
+INFO - [gpt] [2023-06-27 20:28:45] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:28:45] | opening GPT database
+ERROR - [Database] [2023-06-27 20:28:45] | Error writing to main database: Could not process parameters: str((None, None, None, None, 0, 0, 0, 0, None)), it must be of type list, tuple or dict , Level: 3
+INFO - [gpt] [2023-06-27 20:28:58] | !using testmode!
+INFO - [gpt] [2023-06-27 20:28:58] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:28:58] | opening GPT database
+ERROR - [Database] [2023-06-27 20:28:58] | Error writing to main database: Could not process parameters: str((None, None, None, None, 0, 0, 0, 0, None)), it must be of type list, tuple or dict , Level: 3
+INFO - [gpt] [2023-06-27 20:30:33] | !using testmode!
+INFO - [gpt] [2023-06-27 20:30:33] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:30:33] | opening GPT database
+INFO - [Database] [2023-06-27 20:30:33] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-27 20:30:33] | facts for: 54 were added to the main database
+INFO - [Database] [2023-06-27 20:30:33] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-27 20:30:33] | facts for: 55 were added to the main database
+INFO - [Database] [2023-06-27 20:30:33] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-27 20:30:33] | facts for: 18 were added to the main database
+INFO - [Database] [2023-06-27 20:30:33] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-27 20:30:33] | facts for: 7 were added to the main database
+INFO - [Database] [2023-06-27 20:30:33] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-27 20:30:33] | facts for: 24 were added to the main database
+INFO - [gpt] [2023-06-27 20:31:01] | !using testmode!
+INFO - [gpt] [2023-06-27 20:31:01] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:31:01] | opening GPT database
+INFO - [Database] [2023-06-27 20:31:01] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-27 20:31:01] | facts for: 54 were added to the main database
+INFO - [Database] [2023-06-27 20:31:01] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-27 20:31:01] | facts for: 55 were added to the main database
+INFO - [Database] [2023-06-27 20:31:01] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-27 20:31:01] | facts for: 18 were added to the main database
+INFO - [Database] [2023-06-27 20:31:01] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-27 20:31:01] | facts for: 7 were added to the main database
+INFO - [Database] [2023-06-27 20:31:01] | Data inserted into the main database successfully.
+INFO - [gpt] [2023-06-27 20:31:01] | facts for: 24 were added to the main database
+INFO - [gpt] [2023-06-27 20:31:12] | !using testmode!
+INFO - [gpt] [2023-06-27 20:31:12] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2023-06-27 20:31:12] | opening GPT database
+ERROR - [Database] [2023-06-27 20:31:12] | Error writing to main database: 1406 (22001): Data too long for column 'Fakt' at row 1 , Level: 3

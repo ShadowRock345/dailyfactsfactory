@@ -71,7 +71,7 @@ def readvalues():
                 errorlevel += 1
             else:
                 pytime.sleep(120)
-        printmsg = 'opening ' + str(module) + ' database,'
+        printmsg = 'opening ' + str(module) + ' database'
         logger.success(printmsg)
     return values
 
@@ -144,12 +144,12 @@ def writetomaindatabase(fact_list):
         x += 1
         i = 0
         while i == 0:
-            try:
+            #try:
                 database.connect()
                 string_fact_topic = str(fact_topic)
                 string_facts = str(facts)
                 #Status, Fakt, Titel, Hashtag, Performance, VideoID, Laenge, MusikID, Url
-                valuestowrite = ["fact_generated",string_facts,string_fact_topic,None,None,None,None,None,""]
+                valuestowrite = ['fact_generated',string_facts,string_fact_topic,None,None,None,None,None,None]
                 databasestatus = database.write(valuestowrite,'main')
                 database.close()
                 if databasestatus == 1:
@@ -158,12 +158,12 @@ def writetomaindatabase(fact_list):
                     i = 1
                 else:
                     pytime.sleep(10)
-            except Exception as e:
-                printmsg = 'error writing to main database, errorcode: ' + str(errorvalue) + ' Exception: ' + str(e)
-                logger.error(printmsg,errorvalue)
-                if errorvalue < 3:
-                    errorvalue += 1
-                pytime.sleep(15)
+            # except Exception as e:
+            #     printmsg = 'error writing to main database, errorcode: ' + str(errorvalue) + ' Exception: ' + str(e)
+            #     logger.error(printmsg,errorvalue)
+            #     if errorvalue < 3:
+            #         errorvalue += 1
+            #     pytime.sleep(15)
 
 def main():
     values = readvalues()

@@ -34,3 +34,5 @@ final_clip = final_clip.set_audio(audio_clip)
 
 # Video exportieren
 final_clip.write_videofile("Ausgabedatei.mp4", codec="libx264", fps=24)
+
+
