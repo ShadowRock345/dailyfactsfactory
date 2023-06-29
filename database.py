@@ -167,6 +167,28 @@ class Database():
             return 0
         return 0
 
+    def update(self, writetype, update_columns, update_values, identification_column, identification_value):
+        if writetype == "main":
+            try:
+                db2 = mysql.connector.connect(host="localhost",user="admin",password="FactsFactoryBotDatabase",database="maindatabase")
+                cursor2 = db2.cursor()
+                set_clause = ", ".join(f"{column} = %s" for column in update_columns)
+
+                query = f"UPDATE video SET {set_clause} WHERE {identification_column} = %s"
+
+                update_values.append(identification_value)
+
+                cursor2.execute(query, update_values)
+
+                db2.commit()
+
+                cursor2.close()
+                db2.close()
+                return 1
+            except mysql.connector.Error as error:
+                self.logger.error("Failed updating " + writetype + " database: " + str(error), 3)
+                return 0
+
     def close(self):
         self.cursor.close()
         self.db.close()

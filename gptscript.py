@@ -155,7 +155,7 @@ def writetomaindatabase(fact_list):
         x += 1
         i = 0
         while i == 0:
-            #try:
+            try:
                 database.connect()
                 string_fact_topic = str(fact_topic)
                 string_facts = str(facts)
@@ -170,14 +170,14 @@ def writetomaindatabase(fact_list):
                     i = 1
                 else:
                     pytime.sleep(10)
-            # except Exception as e:
-            #     printmsg = 'error writing to main database, errorcode: ' + str(errorvalue) + ' Exception: ' + str(e)
-            #     logger.error(printmsg,errorvalue)
-            #     if errorvalue < 3:
-            #         errorvalue += 1
-            #     else:
-            #       discord_logger.error(printmsg,module)
-            #     pytime.sleep(15)
+             except Exception as e:
+                 printmsg = 'error writing to main database, errorcode: ' + str(errorvalue) + ' Exception: ' + str(e)
+                 logger.error(printmsg,errorvalue)
+                 if errorvalue < 3:
+                     errorvalue += 1
+                 else:
+                   discord_logger.error(printmsg,module)
+                 pytime.sleep(15)
 
 def main():
     values = readvalues()

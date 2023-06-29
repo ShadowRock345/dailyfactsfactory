@@ -70,6 +70,7 @@ def read_main():
     return values
 
 def parse_new_facts(values):
+    id_list = []
     facts_to_generate = []
     array = np.array(values)
     if len(array) == 0:
@@ -86,22 +87,37 @@ def parse_new_facts(values):
                 facts_to_generate.append(id)
                 facts_to_generate.append(facts)
                 facts_to_generate.append(topic)
+                id_list.append(id)
             i += 1
-    return facts_to_generate
+    return facts_to_generate, id_list
 
-def checkaudiofile(filename):
+def checkaudiofile(file_name_list):
+    global module
+    files_not_found = []
+    error_ids = []
     folder = "/textaudios"
-    
-    file_path = os.path.join(folder,filename)
-    
-    if os.path.exists(file_path):
-        return 1
-    else:
-        return 0
+    for file in file_name_list:
+        file_path = os.path.join(folder,filename)
+        if os.path.exists(file_path):
+            printmsg = 'successfully generated tts: ' + str(file_path)
+            logger.success(printmsg)
+            discord_logger.success(printmsg,module)
+        else:
+            files_not_found.append(file)
+    if len(files_not_found) != 0:
+        for element in file_name_list:
+            id = str(element)[0]
+            printmsg = 'missing tts file: ' + str(element) + ' | id: ' + str(id)
+            errorlevel = 3
+            logger.error(printmsg,errorlevel)
+            discord_logger.error(printmsg,module)
+            error_ids.append(id)
+    return error_ids
 
-def createaudio(facts_to_generate):
+def createaudio(facts_to_generate, id_list):
     global voice
     length_facts_list = len(facts_to_generate)
+    file_name_list = []
     i = 0
     while i < length_facts_list:
         mainfilename = facts_to_generate[i]
@@ -113,23 +129,62 @@ def createaudio(facts_to_generate):
         x = 1
         facts = ast.literal_eval(facts_list)
         for fact in facts:
-            filename = "textaudios/" + str(mainfilename) + '_' + str(x) + '.mp3'
-            tts.tts(fact,voice,filename)
-            x += 1
-            #print(fact)
-            #print(filename)
+            if fact != '':
+                filename = "textaudios/" + str(mainfilename) + '_' + str(x) + '.mp3'
+                tts.tts(fact,voice,filename)
+                x += 1
+                file_name_list.append(filename)
+                #print(fact)
+                #print(filename)
         x = 0
         filename = "textaudios/" + str(mainfilename) + '_' + str(x) + '.mp3'
         text = 'Daily ' + str(topic) + ' facts!'
         tts.tts(text,voice,filename)
+        file_name_list.append(filename)
         #print(text)
-    
+    return file_name_list
+
+def write_new_status(error_ids, id_list):
+    errorvalue = 0
+
+    if error_ids != []:
+        for id in error_ids:
+            status = 'error_creating_tts'
+
+            columns_to_update = ['Status']
+            values_to_update = [status]
+            identifizierung = "ID"
+            identifizierung_value = int(id)
+            database.update("main", columns_to_update, values_to_update, identifizierung, identifizierung_value)
+
+        ids_in_only_one_list = list(set(id_list)-set(error_ids))
+
+        for id in ids_in_only_one_list:
+            status = 'tts_generated'
+
+            columns_to_update = ['Status']
+            values_to_update = [status]
+            identifizierung = "ID"
+            identifizierung_value = int(id)
+            database.update("main", columns_to_update, values_to_update, identifizierung, identifizierung_value)
+
+    else:
+        status = 'tts_generated'
+
+        columns_to_update = ['Status']
+        values_to_update = [status]
+        identifizierung = "ID"
+        identifizierung_value = int(id)
+        database.update("main", columns_to_update, values_to_update, identifizierung, identifizierung_value)
+
+
 def main():
     values = read_main()
-    facts_to_generate =  parse_new_facts(values)
+    facts_to_generate, id_list =  parse_new_facts(values)
     if facts_to_generate != []:
-        createaudio(facts_to_generate)
-
+        file_name_list = createaudio(facts_to_generate)
+        error_ids = checkaudiofile(file_name_list, id_list)
+        write_new_status(error_ids, id_list)
 
 discord_logger = Discord_logger()
 config = Config('TEXTAUDIO')
