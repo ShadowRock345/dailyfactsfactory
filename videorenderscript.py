@@ -141,8 +141,10 @@ def main():
 
     values = read_main()
     video_info_parsed = parse_new_video()
-    stockvideo = findvideo(str(video_info_parsed[2]))
-    stockmusic = findmusic(str(video_info_parsed[2]))
+    stockvideo = random.choice(findvideo(str(video_info_parsed[2])))
+    stockmusic = random.choice(findmusic(str(video_info_parsed[2])))
+
+    
 
 config = Config('RENDER')
 database = Database(str(config.getvalue('database')))

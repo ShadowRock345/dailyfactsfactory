@@ -145,37 +145,72 @@ def createaudio(facts_to_generate, id_list):
     return file_name_list
 
 def write_new_status(error_ids, id_list):
-    errorvalue = 0
-
+    errorlevel = 3
+    global module
     if error_ids != []:
         for id in error_ids:
             status = 'error_creating_tts'
-
-            columns_to_update = ['Status']
-            values_to_update = [status]
-            identifizierung = "ID"
-            identifizierung_value = int(id)
-            database.update("main", columns_to_update, values_to_update, identifizierung, identifizierung_value)
+            errorcode = 0
+            stopper = 0
+            while errorcode == 0:
+                columns_to_update = ['Status']
+                values_to_update = [status]
+                identifizierung = "ID"
+                identifizierung_value = int(id)
+                errocode = database.update("main", columns_to_update, values_to_update, identifizierung, identifizierung_value)
+                if errorcode == 0:
+                    printmsg = 'error connecting to main database'
+                    logger.error(printmsg,errorlevel)
+                    time.sleep(10)
+                    if stopper > 5:
+                        errorcode = 1
+                        printmsg = 'FATAL error connecting to main database, continuing to prevent endlessloop'
+                        logger.error(printmsg,errorlevel)
+                        time.sleep(10)
+                stopper += 1
 
         ids_in_only_one_list = list(set(id_list)-set(error_ids))
 
         for id in ids_in_only_one_list:
             status = 'tts_generated'
-
+            errorcode = 0
+            stopper = 0
+            while errorcode == 0:
+                columns_to_update = ['Status']
+                values_to_update = [status]
+                identifizierung = "ID"
+                identifizierung_value = int(id)
+                errocode = database.update("main", columns_to_update, values_to_update, identifizierung, identifizierung_value)
+                if errorcode == 0:
+                    printmsg = 'error connecting to main database'
+                    logger.error(printmsg,errorlevel)
+                    time.sleep(10)
+                    if stopper > 5:
+                        errorcode = 1
+                        printmsg = 'FATAL error connecting to main database, continuing to prevent endlessloop'
+                        logger.error(printmsg,errorlevel)
+                        time.sleep(10)
+                stopper += 1
+    else:
+        status = 'tts_generated'
+        errorcode = 0
+        stopper = 0
+        while errorcode == 0:
             columns_to_update = ['Status']
             values_to_update = [status]
             identifizierung = "ID"
             identifizierung_value = int(id)
-            database.update("main", columns_to_update, values_to_update, identifizierung, identifizierung_value)
-
-    else:
-        status = 'tts_generated'
-
-        columns_to_update = ['Status']
-        values_to_update = [status]
-        identifizierung = "ID"
-        identifizierung_value = int(id)
-        database.update("main", columns_to_update, values_to_update, identifizierung, identifizierung_value)
+            errocode = database.update("main", columns_to_update, values_to_update, identifizierung, identifizierung_value)
+            if errorcode == 0:
+                printmsg = 'error connecting to main database'
+                logger.error(printmsg,errorlevel)
+                time.sleep(10)
+                if stopper > 5:
+                    errorcode = 1
+                    printmsg = 'FATAL error connecting to main database, continuing to prevent endlessloop'
+                    logger.error(printmsg,errorlevel)
+                    time.sleep(10)
+            stopper += 1
 
 
 def main():
