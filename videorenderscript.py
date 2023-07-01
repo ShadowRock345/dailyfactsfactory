@@ -4,11 +4,12 @@ from database import Config
 from moviepy.editor import *
 import time
 import os
+import ast
 import datetime
 import random
 from pydub import AudioSegment
 
-global font_path, video_info_parsed, stockvideo, stockmusic
+global codecr, font_path, video_info_parsed, stockvideo, stockmusic
 
 def realtime():
     now = datetime.datetime.now()
@@ -55,7 +56,8 @@ def parse_new_video(values):
         for status in seccond_column:
             if status == 'tts_generated':
                 id = array[i,0]
-                facts = array[i,2]
+                facts_list = array[i,2]
+                facts = ast.literal_eval(facts_list)
                 topic = array[i,3]
                 videoid = array[i,6]
                 musicid = array[i,8]
@@ -92,7 +94,7 @@ def findvideo(videotag:str) -> list[str]:
     results = []
     for row in values:
         if videotag in row[1]:
-            result = ",".join(map(str, row))
+            result = ",".join(map(str, row[0]))
             results.append(result)
     return results
 
@@ -121,14 +123,24 @@ def findmusic(musictag:str) -> list[str]:
     results = []
     for row in values:
         if musictag in row[1]:
-            result = ",".join(map(str, row))
+            result = ",".join(map(str, row[0]))
             results.append(result)
     return results
 
-def render(stock_video_path, stock_music_path):
-    global font_pathl, video_info_parsed
+def render():
+    global codecr, font_path, video_info_parsed, stockvideo, stockmusic
 
+    stock_video_path = str(stockvideo) + ".mp4"
+    stock_music_path = str(stockmusic) + ".mp3"
+
+    video_clip = VideoFileClip(stock_video_path).set_duration(10)
+    audio_clip = AudioFileClip(stock_music_path).set_duration(10)
     
+    final_video = CompositeVideoCLip([video_clip])
+    final_video = final_video.set_audio(audio_clip)
+
+    final_clip.write_videofile("videos/"+str(video_info_parsed[0])+".mp4", codec=codecr, fps=24)
+
     columns_to_update = ['Laenge','Status']
     values_to_update = [3, 'video_generated']
     identifizierung = "ID"
@@ -144,11 +156,9 @@ def main():
     stockvideo = random.choice(findvideo(str(video_info_parsed[2])))
     stockmusic = random.choice(findmusic(str(video_info_parsed[2])))
 
-    
-
 config = Config('RENDER')
 database = Database(str(config.getvalue('database')))
 logger = Logger(str(config.getvalue('logger')))
 module = str(config.getvalue('module'))
-codec = str(config.getvalue('codec'))
+codecr = str(config.getvalue('codec'))
 font_path = str(config.getvalue('font_path'))

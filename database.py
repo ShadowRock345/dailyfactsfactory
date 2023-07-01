@@ -178,6 +178,8 @@ class Database():
 
                 update_values.append(identification_value)
 
+                #query = "{}".format(query % tuple(update_values))
+
                 cursor2.execute(query, update_values)
 
                 db2.commit()
