@@ -146,7 +146,7 @@ class Database():
                 try:
                     placeholders = '(%s, %s, %s)'
                     querplaceholders = data
-                    query = f'INSERT INTO video (Thema, Score, Uhrzeit) VALUES {placeholders}'
+                    query = f'INSERT INTO video (Thema, Score, Uhrzeit, Tags) VALUES {placeholders}'
                     db2 = mysql.connector.connect(host="localhost",user="admin",password="FactsFactoryBotDatabase",database="gptdatabase")
                     cursor2 = db2.cursor()
                     cursor2.execute(query, querplaceholders)

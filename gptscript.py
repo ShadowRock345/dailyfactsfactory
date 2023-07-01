@@ -106,7 +106,7 @@ def converttoarray(values):
         zuverwendendezeilen = []
         i = 0
         while i <= videocount:
-            zuverwendendezeieln.append(i)
+            zuverwendendezeielen.append(i)
             i += 1
     return zuverwendendezeilen,sorted_gptarray
 
@@ -170,7 +170,7 @@ def writetomaindatabase(fact_list):
                     i = 1
                 else:
                     pytime.sleep(10)
-             except Exception as e:
+            except Exception as e:
                  printmsg = 'error writing to main database, errorcode: ' + str(errorvalue) + ' Exception: ' + str(e)
                  logger.error(printmsg,errorvalue)
                  if errorvalue < 3:

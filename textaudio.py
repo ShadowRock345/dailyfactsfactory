@@ -9,8 +9,9 @@ import os
 import time as pytime
 import numpy as np
 import ast
+import threading
 
-global module,voice,database
+global module,voice,database,factcount
 
 def threadstarter():
     threadstarter = 0
@@ -118,7 +119,7 @@ def checkaudiofile(file_name_list, id_list):
     return error_ids
 
 def createaudio(facts_to_generate, id_list):
-    global voice
+    global voice,factcount
     length_facts_list = len(facts_to_generate)
     file_name_list = []
     i = 0
@@ -141,7 +142,7 @@ def createaudio(facts_to_generate, id_list):
                 #print(filename)
         x = 0
         filename = "textaudios/" + str(mainfilename) + '_' + str(x) + '.mp3'
-        text = 'Daily ' + str(topic) + ' facts!'
+        text = str(factcount) + ' facts about ' + str(topic) + "you don't know!"
         tts.tts(text,voice,filename)
         file_name_list.append(filename)
         #print(text)
@@ -169,7 +170,7 @@ def write_new_status(error_ids, id_list):
                         errorcode = 1
                         printmsg = 'FATAL error connecting to main database, continuing to prevent endlessloop'
                         logger.error(printmsg,errorlevel)
-                        time.sleep(10)
+                        pytime.sleep(10)
                 stopper += 1
 
         ids_in_only_one_list = list(set(id_list)-set(error_ids))
@@ -232,6 +233,7 @@ schedule.every(5).minutes.do(main)
 database = Database(str(config.getvalue('database')))
 logger = Logger(str(config.getvalue('logger')))
 voice = str(config.getvalue('voice'))
+factcount = str(config.getothervalue('GPT','factcount'))
 
 #threadstarter() #zum test ausgeblendet
 main()
