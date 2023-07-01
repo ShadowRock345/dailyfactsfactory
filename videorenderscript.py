@@ -51,7 +51,6 @@ def get_audio_length():
 
         if intro in matching_files:
             matching_files.remove(intro)
-            print('removed intro file')
 
         for file in matching_files:
             factlength = get_mp3_length(file)
@@ -141,13 +140,14 @@ def findvideo(videotag:str) -> list[str]:
             discord_logger.success(printmsg,module)
     results = []
     for row in values:
-        if videotag in row[1] & float(row[3]) >= float(video_infos[2]):
-            #result = ",".join(map(str, row[0]))
-            result = "stockvideo/" + (videotag) + ".mp4"
-            results.append(result)
-        else:
-            result = "stockvideo/default.mp4"
-            results.append(result)
+        if videotag in row[1]:
+            if float(row[3]) >= float(video_infos[2]):
+                #result = ",".join(map(str, row[0]))
+                result = "stockvideo/" + (videotag) + ".mp4"
+                results.append(result)
+            else:
+                result = "stockvideo/default.mp4"
+                results.append(result)
     return results
 
 def findmusic(musictag:str) -> list[str]:
@@ -175,13 +175,14 @@ def findmusic(musictag:str) -> list[str]:
             discord_logger.success(printmsg,module)
     results = []
     for row in values:
-        if musictag in row[1] & float(row[3]) >= float(video_infos[2]):
-            #result = ",".join(map(str, row[0]))
-            result = "stockmusic/" + str(musictag) + ".mp3"
-            results.append(result)
-        else:
-            result = "stockmusic/default.mp3"
-            results.append(result)
+        if musictag in row[1]:
+            if float(row[3]) >= float(video_infos[2]):
+                #result = ",".join(map(str, row[0]))
+                result = "stockmusic/" + str(musictag) + ".mp3"
+                results.append(result)
+            else:
+                result = "stockmusic/default.mp3"
+                results.append(result)
     return results
 
 def render():
@@ -190,8 +191,8 @@ def render():
     stock_video_path = str(stockvideo)
     stock_music_path = str(stockmusic)
 
-    video_clip = VideoFileClip(stock_video_path).set_duration(10)
-    audio_clip = AudioFileClip(stock_music_path).set_duration(10)
+    video_clip = VideoFileClip(stock_video_path).set_duration(video_infos[2])
+    audio_clip = AudioFileClip(stock_music_path).set_duration(video_infos[2])
 
     target_width = video_clip.h * 9 // 16
     video_clip = video_clip.crop(x1=(video_clip.w - target_width) / 2, x2=(video_clip.w + target_width) / 2)
@@ -218,7 +219,15 @@ def render():
 
     # Overlay der Textclips und Hintergrundboxen auf dem Video
     video_with_text = CompositeVideoClip([video_clip, channel_text, title_box, title_text, fact_text])
-    final_video = video_with_text.set_audio(audio_clip)
+    final_video = video_with_text.set_audio(audio_clip.volumex(0.2))  # Stockmusik mit geringer Lautstärke
+
+    for audio_file, timing in zip(video_infos[1], video_infos[0]):
+        if audio_file != 'FILLER':
+            audio = AudioFileClip(audio_file)
+            if timing is not None:
+                audio = audio.set_start(timing)
+            final_video = final_video.set_audio(final_video.audio.set_duration(audio.duration))
+            final_video = final_video.set_audio(audio)
 
     final_video.write_videofile("videos/"+str(video_info_parsed[0])+".mp4", codec=codecr, fps=24)
 
@@ -231,13 +240,14 @@ def render():
 
 def main():
     global video_info_parsed, stockvideo, stockmusic, video_infos
-
+    video_infos = []
     values = read_main()
     video_info_parsed = parse_new_video(values)
     music,music_files_sorted,final_video_lenght = get_audio_length()
     video_infos.append(music)
     video_infos.append(music_files_sorted)
     video_infos.append(final_video_lenght)
+    print(video_infos)
     stockvideo = random.choice(findvideo(str(video_info_parsed[2])))
     stockmusic = random.choice(findmusic(str(video_info_parsed[2])))
 

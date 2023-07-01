@@ -142,7 +142,7 @@ def createaudio(facts_to_generate, id_list):
                 #print(filename)
         x = 0
         filename = "textaudios/" + str(mainfilename) + '_' + str(x) + '.mp3'
-        text = str(factcount) + ' facts about ' + str(topic) + "you don't know!"
+        text = str(factcount) + ' facts about ' + str(topic) + " you don't know!"
         tts.tts(text,voice,filename)
         file_name_list.append(filename)
         #print(text)
