@@ -17,8 +17,8 @@ global module,errorlevel,videocount,openaiorganizationm,openaiapi_key,factcount,
 
 
 def configloader():
-    global testmode
-    if testmode == 0:
+    #global testmode
+    if testmode == 1:
         printmsg = '!using testmode!'
         logger.success(printmsg)
         discord_logger.success(printmsg,module)
@@ -185,7 +185,7 @@ def writetomaindatabase(fact_list):
 def main():
     values = readvalues()
     zuverwendendezeilen,sorted_gptarray = converttoarray(values)
-    if testmode == 0:
+    if testmode == 1:
         fact_list = [54, ['1. Jazz is a genre of music that originated in the late 19th and early 20th centuries in African American communities.', '2. Rock music is a genre of popular music that originated as "rock and roll" in the United States in the 1950s.', '3. Hip hop is a genre of music that originated in the late 1970s in the Bronx, New York City.'], 55, ['1. International relations is a field of study that examines the interactions between countries.', '2. It is a multidisciplinary field that combines elements of political science, economics, history, and law.', '3. International relations is concerned with the causes of war, the maintenance of peace, and the promotion of cooperation between states.'], 18, ['1. Psychiatry is a branch of medicine that focuses on the diagnosis, treatment, and prevention of mental health disorders.', '', '2. Psychiatrists are medical doctors who specialize in mental health and can prescribe medications.', '', '3. Psychotherapy is a form of treatment used in psychiatry that involves talking with a mental health professional to help identify and manage mental health issues.'], 7, ['["Social media is used by over 3 billion people worldwide.",', '"Facebook is the most popular social media platform with over 2.5 billion users.",', '"Twitter has over 330 million active users every month."]'], 24, ["['The first human civilization appeared in Mesopotamia around 3500 BC.',", " 'The Roman Empire was one of the largest and most influential empires in world history.',", " 'The Industrial Revolution began in the late 18th century and changed the way people lived and worked.']"]]
     else:
         fact_list = getfacts(zuverwendendezeilen,sorted_gptarray)
@@ -204,7 +204,7 @@ chatgpt = ChatGPT()
 openaiorganization = str(config.getvalue('openaiorganization'))
 openaiapi_key = str(config.getvalue('openaiapi_key'))
 factcount = str(config.getvalue('factcount'))
-testmode = bool(config.getvalue('testmode'))
+testmode = int(config.getvalue('testmode'))
 
 
 configloader()
