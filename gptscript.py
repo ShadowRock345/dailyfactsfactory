@@ -115,6 +115,7 @@ def getfacts(zuverwendendezeilen,sorted_gptarray):
     global openaiapi_key,openaiorganization,factcount
     errorlevel = 0
     fact_list = []
+    fact_list_without_number = []
     openai.organization = str(openaiorganization)
     openai.api_key = openaiapi_key
     for element in zuverwendendezeilen:
@@ -134,6 +135,13 @@ def getfacts(zuverwendendezeilen,sorted_gptarray):
                 short_fact_list = facts.strip().split("\n")
                 fact_list.append(topic)
                 fact_list.append(short_fact_list)
+
+                for element in fact_list:
+                    if element[0].isdigit():
+                        fact_list_without_number.append(element[1:])
+                    else:
+                        fact_list_without_number.append(element)
+
             except:
                 printmsg = 'error generating ' + str(factcount) + ' facts for the topic: ' + str(topic) + ' | error code: ' + str(response.status_code)
                 logger.error(printmsg,errorlevel)
@@ -144,8 +152,9 @@ def getfacts(zuverwendendezeilen,sorted_gptarray):
                     time.sleep(600)
                 time.sleep(30)
                 fact_list = []
+                fact_list_without_number = []
 
-    return fact_list
+    return fact_list_without_number
 
 def writetomaindatabase(fact_list):
     errorvalue = 0
