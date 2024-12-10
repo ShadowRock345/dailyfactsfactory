@@ -16,6 +16,8 @@ from chatGPT import ChatGPT
 global module,errorlevel,videocount,openaiorganizationm,openaiapi_key,factcount,testmode
 
 
+#processing the facts
+
 def configloader():
     #global testmode
     if testmode == 1:

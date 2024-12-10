@@ -5,6 +5,8 @@ import datetime
 #Config class
 import configparser
 
+#simple logger written by shadowrock345
+
 class Logger():
     def __init__(self, process):
         self.process = process

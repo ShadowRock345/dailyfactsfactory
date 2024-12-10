@@ -3,6 +3,8 @@ from discord_webhook import DiscordWebhook
 from logger import Logger
 import datetime
 
+#logging on discord for review of videos
+
 config = Config('DISCORD')
 discord_error_webhook = str(config.getvalue('discord_error_webhook'))
 discord_success_webhook = str(config.getvalue('discord_success_webhook'))

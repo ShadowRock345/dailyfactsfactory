@@ -11,6 +11,8 @@ import numpy as np
 import ast
 import threading
 
+#generating audio out of text 
+
 global module,voice,database,factcount
 
 def threadstarter():

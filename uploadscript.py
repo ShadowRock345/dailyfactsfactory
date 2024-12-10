@@ -17,6 +17,8 @@ import pickle
 from discord_logger import Discord_logger
 import requests
 
+#uploading on different platforms
+
 TOKEN_PATH = 'credentials.pickle'
 
 # Berechtigungsbereiche für die YouTube Data API

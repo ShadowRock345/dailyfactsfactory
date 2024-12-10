@@ -16,3 +16,4 @@ class ChatGPT:
         global model,temperature,max_tokens
         response = openai.Completion.create(model=model,prompt=prompt,temperature=temperature,max_tokens=max_tokens)
         return response
+#model

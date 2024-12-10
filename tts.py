@@ -1,6 +1,8 @@
 # credits: https://github.com/oscie57/tiktok-voice
 import threading, requests, base64
 
+#using tiktok voice
+
 VOICES = [
     # DISNEY VOICES
     'en_us_ghostface',            # Ghost Face

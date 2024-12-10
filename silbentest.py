@@ -1,5 +1,7 @@
 import re
 
+#testing
+
 def split_into_syllables(sentence):
     # Entferne alle Sonderzeichen und Zahlen
     sentence = re.sub('[^a-zA-ZäöüÄÖÜß]', '', sentence)

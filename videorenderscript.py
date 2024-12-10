@@ -14,6 +14,8 @@ from mutagen.mp3 import MP3
 import glob
 from pydub import AudioSegment
 
+#composing video and audio
+
 global codecr, font_path, video_info_parsed, stockvideo, stockmusic, channelname, video_infos,tts_path,module,video_pause_time, fact_count
 
 def realtime():

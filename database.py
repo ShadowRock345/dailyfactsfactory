@@ -78,6 +78,7 @@ class Database():
                 return 0
 
     def write(self, data, writetype):
+        #writing into database
         if writetype == "main":
             if len(data) == self.main:
                 try:
