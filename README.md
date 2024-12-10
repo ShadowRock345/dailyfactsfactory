@@ -1,7 +1,7 @@
 # DailyFactsFactory
 
 ## 🔬 Überblick
-DailyFactsFactory ist eine App, die mithilfe von ChatGPT interessante Fakten generiert, diese in einer Datenbank speichert und daraus automatisiert Videos erstellt. Die Videos werden auf verschiedenen sozialen Plattformen hochgeladen und alle Schritte werden umfassend geloggt. Bevor die Videos online gehen, müssen sie über einen Discord-Bot reviewed und freigegeben werden.
+DailyFactsFactory ist eine App, die mithilfe von ChatGPT interessante Fakten generiert, diese in einer Datenbank speichert und daraus automatisiert Videos erstellt. Die Videos werden dabei auch automatisch mit dem gesprochenen Text versehen, welcher auch synchronisiert im Video angezeigt wird. Die Videos werden auf verschiedenen sozialen Plattformen hochgeladen und alle Schritte werden umfassend geloggt. Bevor die Videos online gehen, müssen sie über einen Discord-Bot reviewed und freigegeben werden.
 
 🔗 **Sehe die echten Videos hier:** [FACToryVerse](https://www.youtube.com/@FACToryVerse)
 
