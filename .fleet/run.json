@@ -2,7 +2,7 @@
     "configurations": [
         {
             "type": "python",
-            "name": "Python configuration",
+            "name": "Python configuration", 
         },
         
     ]

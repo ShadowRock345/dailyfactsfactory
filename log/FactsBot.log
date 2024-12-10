@@ -1,266 +1,266 @@
-INFO - [gpt] [2023-06-28 17:47:08] | !using testmode!
-INFO - [gpt] [2023-06-28 17:48:22] | !using testmode!
-INFO - [gpt] [2023-06-28 17:50:12] | !using testmode!
-INFO - [gpt] [2023-06-28 17:50:12] | loading configs: GPT|16:54|True|three
-INFO - [gpt] [2023-06-28 17:50:13] | opening GPT database
-INFO - [Database] [2023-06-28 17:50:13] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:50:13] | facts for: 54 were added to the main database
-INFO - [Database] [2023-06-28 17:50:13] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:50:13] | facts for: 55 were added to the main database
-INFO - [Database] [2023-06-28 17:50:13] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:50:13] | facts for: 18 were added to the main database
-INFO - [Database] [2023-06-28 17:50:14] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:50:14] | facts for: 7 were added to the main database
-INFO - [Database] [2023-06-28 17:50:14] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:50:14] | facts for: 24 were added to the main database
-INFO - [gpt] [2023-06-28 17:54:34] | !using testmode!
-INFO - [gpt] [2023-06-28 17:54:35] | loading configs: GPT|16:54|True|three
-INFO - [gpt] [2023-06-28 17:54:35] | opening GPT database
-INFO - [Database] [2023-06-28 17:54:35] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:54:35] | facts for: 54 were added to the main database
-INFO - [Database] [2023-06-28 17:54:35] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:54:35] | facts for: 55 were added to the main database
-INFO - [Database] [2023-06-28 17:54:37] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:54:37] | facts for: 18 were added to the main database
-INFO - [Database] [2023-06-28 17:54:37] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:54:37] | facts for: 7 were added to the main database
-INFO - [Database] [2023-06-28 17:54:38] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:54:38] | facts for: 24 were added to the main database
-INFO - [gpt] [2023-06-28 17:55:54] | !using testmode!
-INFO - [gpt] [2023-06-28 17:55:54] | loading configs: GPT|16:54|True|three
-INFO - [gpt] [2023-06-28 17:55:55] | opening GPT database
-INFO - [Database] [2023-06-28 17:55:55] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:55:55] | facts for: 54 were added to the main database
-INFO - [Database] [2023-06-28 17:55:55] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:55:55] | facts for: 55 were added to the main database
-INFO - [Database] [2023-06-28 17:55:55] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:55:55] | facts for: 18 were added to the main database
-INFO - [Database] [2023-06-28 17:55:56] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:55:56] | facts for: 7 were added to the main database
-INFO - [Database] [2023-06-28 17:55:56] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:55:56] | facts for: 24 were added to the main database
-INFO - [gpt] [2023-06-28 17:56:17] | !using testmode!
-INFO - [gpt] [2023-06-28 17:56:18] | loading configs: GPT|16:54|True|three
-INFO - [gpt] [2023-06-28 17:56:18] | opening GPT database
-INFO - [Database] [2023-06-28 17:56:18] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:56:18] | facts for: 54 were added to the main database
-INFO - [Database] [2023-06-28 17:56:19] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:56:19] | facts for: 55 were added to the main database
-INFO - [Database] [2023-06-28 17:56:19] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:56:19] | facts for: 18 were added to the main database
-INFO - [Database] [2023-06-28 17:56:19] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:56:19] | facts for: 7 were added to the main database
-INFO - [Database] [2023-06-28 17:56:20] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 17:56:20] | facts for: 24 were added to the main database
-INFO - [textaudiot] [2023-06-28 18:42:36] | opening TEXTAUDIO database
-INFO - [textaudiot] [2023-06-28 18:43:09] | opening TEXTAUDIO database
-INFO - [textaudiot] [2023-06-28 18:43:39] | opening TEXTAUDIO database
-INFO - [gpt] [2023-06-28 18:43:52] | !using testmode!
-INFO - [gpt] [2023-06-28 18:43:52] | loading configs: GPT|16:54|True|three
-INFO - [gpt] [2023-06-28 18:43:53] | opening GPT database
-INFO - [Database] [2023-06-28 18:43:53] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 18:43:53] | facts for: 54 were added to the main database
-INFO - [Database] [2023-06-28 18:43:53] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 18:43:53] | facts for: 55 were added to the main database
-INFO - [Database] [2023-06-28 18:43:53] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 18:43:53] | facts for: 18 were added to the main database
-INFO - [Database] [2023-06-28 18:43:54] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 18:43:54] | facts for: 7 were added to the main database
-INFO - [Database] [2023-06-28 18:43:54] | Data inserted into the main database successfully.
-INFO - [gpt] [2023-06-28 18:43:54] | facts for: 24 were added to the main database
-INFO - [textaudiot] [2023-06-28 18:44:00] | opening TEXTAUDIO database
-INFO - [textaudiot] [2023-06-28 18:44:49] | opening TEXTAUDIO database
-INFO - [textaudio] [2023-06-28 18:48:59] | opening main database
-INFO - [textaudio] [2023-06-28 18:49:58] | opening main database
-INFO - [textaudio] [2023-06-28 19:32:58] | opening main database
-INFO - [textaudio] [2023-06-28 19:33:38] | opening main database
-INFO - [textaudio] [2023-06-28 19:37:45] | opening main database
-INFO - [textaudio] [2023-06-28 19:38:19] | opening main database
-INFO - [textaudio] [2023-06-28 19:38:44] | opening main database
-INFO - [textaudio] [2023-06-28 19:39:18] | opening main database
-INFO - [textaudio] [2023-06-28 19:41:10] | opening main database
-INFO - [textaudio] [2023-06-28 19:41:50] | opening main database
-INFO - [textaudio] [2023-06-28 19:43:45] | opening main database
-INFO - [textaudio] [2023-06-28 19:59:39] | opening main database
-INFO - [textaudio] [2023-06-28 20:00:32] | opening main database
-INFO - [textaudio] [2023-06-28 20:01:11] | opening main database
-INFO - [textaudio] [2023-06-28 20:01:24] | opening main database
-INFO - [textaudio] [2023-06-28 20:03:30] | opening main database
-INFO - [textaudio] [2023-06-28 20:04:16] | opening main database
-INFO - [textaudio] [2023-06-28 20:04:56] | opening main database
-INFO - [textaudio] [2023-06-28 20:05:29] | opening main database
-INFO - [textaudio] [2023-06-28 20:06:13] | opening main database
-INFO - [textaudio] [2023-06-28 20:06:39] | opening main database
-INFO - [textaudio] [2023-06-28 20:09:38] | opening main database
-INFO - [textaudio] [2023-06-29 18:26:14] | opening main database
-INFO - [textaudio] [2023-06-29 18:27:42] | opening main database
-INFO - [textaudio] [2023-06-29 18:29:26] | opening main database
-INFO - [textaudio] [2023-06-29 18:30:31] | opening main database
-ERROR - [textaudio] [2023-06-29 18:30:45] | missing tts file: textaudios/1_1.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:45] | missing tts file: textaudios/1_2.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:46] | missing tts file: textaudios/1_3.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:46] | missing tts file: textaudios/1_0.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:46] | missing tts file: textaudios/2_1.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:46] | missing tts file: textaudios/2_2.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:47] | missing tts file: textaudios/2_3.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:47] | missing tts file: textaudios/2_0.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:47] | missing tts file: textaudios/3_1.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:48] | missing tts file: textaudios/3_2.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:48] | missing tts file: textaudios/3_3.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:48] | missing tts file: textaudios/3_0.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:48] | missing tts file: textaudios/4_1.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:49] | missing tts file: textaudios/4_2.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:49] | missing tts file: textaudios/4_3.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:49] | missing tts file: textaudios/4_0.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:49] | missing tts file: textaudios/5_1.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:50] | missing tts file: textaudios/5_2.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:50] | missing tts file: textaudios/5_3.mp3 | id: t , Level: 3
-ERROR - [textaudio] [2023-06-29 18:30:50] | missing tts file: textaudios/5_0.mp3 | id: t , Level: 3
-ERROR - [discord_logger] [2023-06-29 18:30:51] | failed sending discord error webhook , Level: 0
-INFO - [textaudio] [2023-06-29 18:34:25] | opening main database
-INFO - [textaudio] [2023-06-29 18:36:16] | opening main database
-INFO - [textaudio] [2023-06-29 18:37:20] | opening main database
-INFO - [textaudio] [2023-06-29 18:39:10] | opening main database
-ERROR - [textaudio] [2023-06-29 18:39:30] | missing tts file: textaudios/1_1.mp3 | id: 1 , Level: 3
-ERROR - [textaudio] [2023-06-29 18:39:35] | missing tts file: textaudios/1_2.mp3 | id: 1 , Level: 3
-INFO - [textaudio] [2023-06-29 18:40:28] | opening main database
-INFO - [textaudio] [2023-06-29 18:41:18] | opening main database
-INFO - [textaudio] [2023-06-29 18:41:32] | successfully generated tts: textaudios/1_1.mp3
-INFO - [textaudio] [2023-06-29 18:41:32] | successfully generated tts: textaudios/1_2.mp3
-INFO - [textaudio] [2023-06-29 18:41:32] | successfully generated tts: textaudios/1_3.mp3
-INFO - [textaudio] [2023-06-29 18:41:33] | successfully generated tts: textaudios/1_0.mp3
-INFO - [textaudio] [2023-06-29 18:41:33] | successfully generated tts: textaudios/2_1.mp3
-INFO - [textaudio] [2023-06-29 18:41:33] | successfully generated tts: textaudios/2_2.mp3
-INFO - [textaudio] [2023-06-29 18:41:33] | successfully generated tts: textaudios/2_3.mp3
-INFO - [textaudio] [2023-06-29 18:41:34] | successfully generated tts: textaudios/2_0.mp3
-INFO - [textaudio] [2023-06-29 18:41:34] | successfully generated tts: textaudios/3_1.mp3
-INFO - [textaudio] [2023-06-29 18:41:34] | successfully generated tts: textaudios/3_2.mp3
-INFO - [textaudio] [2023-06-29 18:41:35] | successfully generated tts: textaudios/3_3.mp3
-INFO - [textaudio] [2023-06-29 18:41:35] | successfully generated tts: textaudios/3_0.mp3
-INFO - [textaudio] [2023-06-29 18:41:35] | successfully generated tts: textaudios/4_1.mp3
-INFO - [textaudio] [2023-06-29 18:41:36] | successfully generated tts: textaudios/4_2.mp3
-INFO - [textaudio] [2023-06-29 18:41:36] | successfully generated tts: textaudios/4_3.mp3
-INFO - [textaudio] [2023-06-29 18:41:36] | successfully generated tts: textaudios/4_0.mp3
-INFO - [textaudio] [2023-06-29 18:41:37] | successfully generated tts: textaudios/5_1.mp3
-INFO - [textaudio] [2023-06-29 18:41:38] | successfully generated tts: textaudios/5_2.mp3
-INFO - [textaudio] [2023-06-29 18:41:38] | successfully generated tts: textaudios/5_3.mp3
-INFO - [textaudio] [2023-06-29 18:41:38] | successfully generated tts: textaudios/5_0.mp3
-INFO - [textaudio] [2023-06-29 18:43:44] | opening main database
-INFO - [textaudio] [2023-06-29 18:43:59] | successfully generated tts: textaudios/1_1.mp3
-INFO - [textaudio] [2023-06-29 18:44:00] | successfully generated tts: textaudios/1_2.mp3
-INFO - [textaudio] [2023-06-29 18:44:01] | successfully generated tts: textaudios/1_3.mp3
-INFO - [textaudio] [2023-06-29 18:44:02] | successfully generated tts: textaudios/1_0.mp3
-INFO - [textaudio] [2023-06-29 18:44:04] | successfully generated tts: textaudios/2_1.mp3
-INFO - [textaudio] [2023-06-29 18:44:05] | successfully generated tts: textaudios/2_2.mp3
-INFO - [textaudio] [2023-06-29 18:44:06] | successfully generated tts: textaudios/2_3.mp3
-INFO - [textaudio] [2023-06-29 18:44:07] | successfully generated tts: textaudios/2_0.mp3
-INFO - [textaudio] [2023-06-29 18:44:09] | successfully generated tts: textaudios/3_1.mp3
-INFO - [textaudio] [2023-06-29 18:44:10] | successfully generated tts: textaudios/3_2.mp3
-INFO - [textaudio] [2023-06-29 18:44:12] | successfully generated tts: textaudios/3_3.mp3
-INFO - [textaudio] [2023-06-29 18:44:13] | successfully generated tts: textaudios/3_0.mp3
-INFO - [textaudio] [2023-06-29 18:44:14] | successfully generated tts: textaudios/4_1.mp3
-INFO - [textaudio] [2023-06-29 18:44:15] | successfully generated tts: textaudios/4_2.mp3
-INFO - [textaudio] [2023-06-29 18:44:17] | successfully generated tts: textaudios/4_3.mp3
-INFO - [textaudio] [2023-06-29 18:44:18] | successfully generated tts: textaudios/4_0.mp3
-INFO - [textaudio] [2023-06-29 18:44:19] | successfully generated tts: textaudios/5_1.mp3
-INFO - [textaudio] [2023-06-29 18:44:21] | successfully generated tts: textaudios/5_2.mp3
-INFO - [textaudio] [2023-06-29 18:44:22] | successfully generated tts: textaudios/5_3.mp3
-INFO - [textaudio] [2023-06-29 18:44:23] | successfully generated tts: textaudios/5_0.mp3
-INFO - [textaudio] [2023-06-29 18:44:53] | opening main database
-INFO - [textaudio] [2023-06-29 18:45:07] | successfully generated tts: textaudios/1_1.mp3
-INFO - [textaudio] [2023-06-29 18:45:08] | successfully generated tts: textaudios/1_2.mp3
-INFO - [textaudio] [2023-06-29 18:45:09] | successfully generated tts: textaudios/1_3.mp3
-INFO - [textaudio] [2023-06-29 18:45:10] | successfully generated tts: textaudios/1_0.mp3
-INFO - [textaudio] [2023-06-29 18:45:11] | successfully generated tts: textaudios/2_1.mp3
-INFO - [textaudio] [2023-06-29 18:45:12] | successfully generated tts: textaudios/2_2.mp3
-INFO - [textaudio] [2023-06-29 18:45:13] | successfully generated tts: textaudios/2_3.mp3
-INFO - [textaudio] [2023-06-29 18:45:14] | successfully generated tts: textaudios/2_0.mp3
-INFO - [textaudio] [2023-06-29 18:45:15] | successfully generated tts: textaudios/3_1.mp3
-INFO - [textaudio] [2023-06-29 18:45:16] | successfully generated tts: textaudios/3_2.mp3
-INFO - [textaudio] [2023-06-29 18:45:17] | successfully generated tts: textaudios/3_3.mp3
-INFO - [textaudio] [2023-06-29 18:45:18] | successfully generated tts: textaudios/3_0.mp3
-INFO - [textaudio] [2023-06-29 18:45:19] | successfully generated tts: textaudios/4_1.mp3
-INFO - [textaudio] [2023-06-29 18:45:20] | successfully generated tts: textaudios/4_2.mp3
-INFO - [textaudio] [2023-06-29 18:45:21] | successfully generated tts: textaudios/4_3.mp3
-INFO - [textaudio] [2023-06-29 18:45:22] | successfully generated tts: textaudios/4_0.mp3
-INFO - [textaudio] [2023-06-29 18:45:23] | successfully generated tts: textaudios/5_1.mp3
-INFO - [textaudio] [2023-06-29 18:45:24] | successfully generated tts: textaudios/5_2.mp3
-INFO - [textaudio] [2023-06-29 18:45:25] | successfully generated tts: textaudios/5_3.mp3
-INFO - [textaudio] [2023-06-29 18:45:26] | successfully generated tts: textaudios/5_0.mp3
-INFO - [textaudio] [2023-06-29 18:47:20] | opening main database
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/1_1.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/1_2.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/1_3.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/1_0.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/2_1.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/2_2.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/2_3.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/2_0.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/3_1.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/3_2.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/3_3.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/3_0.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/4_1.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/4_2.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/4_3.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/4_0.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/5_1.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/5_2.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/5_3.mp3
-INFO - [textaudio] [2023-06-29 18:47:34] | successfully generated tts: textaudios/5_0.mp3
-ERROR - [textaudio] [2023-06-29 18:47:34] | error connecting to main database , Level: 3
-INFO - [textaudio] [2023-06-29 18:51:56] | opening main database
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/2_1.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/2_2.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/2_3.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/2_0.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/3_1.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/3_2.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/3_3.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/3_0.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/4_1.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/4_2.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/4_3.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/4_0.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/5_1.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/5_2.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/5_3.mp3
-INFO - [textaudio] [2023-06-29 18:52:07] | successfully generated tts: textaudios/5_0.mp3
-ERROR - [textaudio] [2023-06-29 18:52:07] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:52:17] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:52:27] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:52:37] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:52:47] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:52:57] | error connecting to main database , Level: 3
-INFO - [textaudio] [2023-06-29 18:53:03] | opening main database
-INFO - [textaudio] [2023-06-29 18:53:11] | successfully generated tts: textaudios/3_1.mp3
-INFO - [textaudio] [2023-06-29 18:53:11] | successfully generated tts: textaudios/3_2.mp3
-INFO - [textaudio] [2023-06-29 18:53:11] | successfully generated tts: textaudios/3_3.mp3
-INFO - [textaudio] [2023-06-29 18:53:11] | successfully generated tts: textaudios/3_0.mp3
-INFO - [textaudio] [2023-06-29 18:53:11] | successfully generated tts: textaudios/4_1.mp3
-INFO - [textaudio] [2023-06-29 18:53:11] | successfully generated tts: textaudios/4_2.mp3
-INFO - [textaudio] [2023-06-29 18:53:11] | successfully generated tts: textaudios/4_3.mp3
-INFO - [textaudio] [2023-06-29 18:53:11] | successfully generated tts: textaudios/4_0.mp3
-INFO - [textaudio] [2023-06-29 18:53:11] | successfully generated tts: textaudios/5_1.mp3
-INFO - [textaudio] [2023-06-29 18:53:11] | successfully generated tts: textaudios/5_2.mp3
-INFO - [textaudio] [2023-06-29 18:53:11] | successfully generated tts: textaudios/5_3.mp3
-INFO - [textaudio] [2023-06-29 18:53:11] | successfully generated tts: textaudios/5_0.mp3
-ERROR - [textaudio] [2023-06-29 18:53:11] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:53:21] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:53:31] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:53:41] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:53:51] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:54:01] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:54:11] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:54:21] | FATAL error connecting to main database, continuing to prevent endlessloop , Level: 3
-ERROR - [textaudio] [2023-06-29 18:54:31] | error connecting to main database , Level: 3
-INFO - [textaudio] [2023-06-29 18:54:42] | opening main database
-INFO - [textaudio] [2023-06-29 18:54:44] | successfully generated tts: textaudios/5_1.mp3
-INFO - [textaudio] [2023-06-29 18:54:44] | successfully generated tts: textaudios/5_2.mp3
-INFO - [textaudio] [2023-06-29 18:54:44] | successfully generated tts: textaudios/5_3.mp3
-INFO - [textaudio] [2023-06-29 18:54:44] | successfully generated tts: textaudios/5_0.mp3
-ERROR - [textaudio] [2023-06-29 18:54:44] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:54:54] | error connecting to main database , Level: 3
-ERROR - [textaudio] [2023-06-29 18:55:04] | error connecting to main database , Level: 3
-INFO - [textaudio] [2023-06-29 18:57:35] | opening main database
-INFO - [textaudio] [2023-06-30 16:36:57] | opening main database
+INFO - [gpt] [2024-06-28 17:47:08] | !using testmode!
+INFO - [gpt] [2024-06-28 17:48:22] | !using testmode!
+INFO - [gpt] [2024-06-28 17:50:12] | !using testmode!
+INFO - [gpt] [2024-06-28 17:50:12] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2024-06-28 17:50:13] | opening GPT database
+INFO - [Database] [2024-06-28 17:50:13] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:50:13] | facts for: 54 were added to the main database
+INFO - [Database] [2024-06-28 17:50:13] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:50:13] | facts for: 55 were added to the main database
+INFO - [Database] [2024-06-28 17:50:13] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:50:13] | facts for: 18 were added to the main database
+INFO - [Database] [2024-06-28 17:50:14] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:50:14] | facts for: 7 were added to the main database
+INFO - [Database] [2024-06-28 17:50:14] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:50:14] | facts for: 24 were added to the main database
+INFO - [gpt] [2024-06-28 17:54:34] | !using testmode!
+INFO - [gpt] [2024-06-28 17:54:35] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2024-06-28 17:54:35] | opening GPT database
+INFO - [Database] [2024-06-28 17:54:35] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:54:35] | facts for: 54 were added to the main database
+INFO - [Database] [2024-06-28 17:54:35] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:54:35] | facts for: 55 were added to the main database
+INFO - [Database] [2024-06-28 17:54:37] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:54:37] | facts for: 18 were added to the main database
+INFO - [Database] [2024-06-28 17:54:37] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:54:37] | facts for: 7 were added to the main database
+INFO - [Database] [2024-06-28 17:54:38] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:54:38] | facts for: 24 were added to the main database
+INFO - [gpt] [2024-06-28 17:55:54] | !using testmode!
+INFO - [gpt] [2024-06-28 17:55:54] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2024-06-28 17:55:55] | opening GPT database
+INFO - [Database] [2024-06-28 17:55:55] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:55:55] | facts for: 54 were added to the main database
+INFO - [Database] [2024-06-28 17:55:55] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:55:55] | facts for: 55 were added to the main database
+INFO - [Database] [2024-06-28 17:55:55] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:55:55] | facts for: 18 were added to the main database
+INFO - [Database] [2024-06-28 17:55:56] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:55:56] | facts for: 7 were added to the main database
+INFO - [Database] [2024-06-28 17:55:56] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:55:56] | facts for: 24 were added to the main database
+INFO - [gpt] [2024-06-28 17:56:17] | !using testmode!
+INFO - [gpt] [2024-06-28 17:56:18] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2024-06-28 17:56:18] | opening GPT database
+INFO - [Database] [2024-06-28 17:56:18] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:56:18] | facts for: 54 were added to the main database
+INFO - [Database] [2024-06-28 17:56:19] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:56:19] | facts for: 55 were added to the main database
+INFO - [Database] [2024-06-28 17:56:19] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:56:19] | facts for: 18 were added to the main database
+INFO - [Database] [2024-06-28 17:56:19] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:56:19] | facts for: 7 were added to the main database
+INFO - [Database] [2024-06-28 17:56:20] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 17:56:20] | facts for: 24 were added to the main database
+INFO - [textaudiot] [2024-06-28 18:42:36] | opening TEXTAUDIO database
+INFO - [textaudiot] [2024-06-28 18:43:09] | opening TEXTAUDIO database
+INFO - [textaudiot] [2024-06-28 18:43:39] | opening TEXTAUDIO database
+INFO - [gpt] [2024-06-28 18:43:52] | !using testmode!
+INFO - [gpt] [2024-06-28 18:43:52] | loading configs: GPT|16:54|True|three
+INFO - [gpt] [2024-06-28 18:43:53] | opening GPT database
+INFO - [Database] [2024-06-28 18:43:53] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 18:43:53] | facts for: 54 were added to the main database
+INFO - [Database] [2024-06-28 18:43:53] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 18:43:53] | facts for: 55 were added to the main database
+INFO - [Database] [2024-06-28 18:43:53] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 18:43:53] | facts for: 18 were added to the main database
+INFO - [Database] [2024-06-28 18:43:54] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 18:43:54] | facts for: 7 were added to the main database
+INFO - [Database] [2024-06-28 18:43:54] | Data inserted into the main database successfully.
+INFO - [gpt] [2024-06-28 18:43:54] | facts for: 24 were added to the main database
+INFO - [textaudiot] [2024-06-28 18:44:00] | opening TEXTAUDIO database
+INFO - [textaudiot] [2024-06-28 18:44:49] | opening TEXTAUDIO database
+INFO - [textaudio] [2024-06-28 18:48:59] | opening main database
+INFO - [textaudio] [2024-06-28 18:49:58] | opening main database
+INFO - [textaudio] [2024-06-28 19:32:58] | opening main database
+INFO - [textaudio] [2024-06-28 19:33:38] | opening main database
+INFO - [textaudio] [2024-06-28 19:37:45] | opening main database
+INFO - [textaudio] [2024-06-28 19:38:19] | opening main database
+INFO - [textaudio] [2024-06-28 19:38:44] | opening main database
+INFO - [textaudio] [2024-06-28 19:39:18] | opening main database
+INFO - [textaudio] [2024-06-28 19:41:10] | opening main database
+INFO - [textaudio] [2024-06-28 19:41:50] | opening main database
+INFO - [textaudio] [2024-06-28 19:43:45] | opening main database
+INFO - [textaudio] [2024-06-28 19:59:39] | opening main database
+INFO - [textaudio] [2024-06-28 20:00:32] | opening main database
+INFO - [textaudio] [2024-06-28 20:01:11] | opening main database
+INFO - [textaudio] [2024-06-28 20:01:24] | opening main database
+INFO - [textaudio] [2024-06-28 20:03:30] | opening main database
+INFO - [textaudio] [2024-06-28 20:04:16] | opening main database
+INFO - [textaudio] [2024-06-28 20:04:56] | opening main database
+INFO - [textaudio] [2024-06-28 20:05:29] | opening main database
+INFO - [textaudio] [2024-06-28 20:06:13] | opening main database
+INFO - [textaudio] [2024-06-28 20:06:39] | opening main database
+INFO - [textaudio] [2024-06-28 20:09:38] | opening main database
+INFO - [textaudio] [2024-06-29 18:26:14] | opening main database
+INFO - [textaudio] [2024-06-29 18:27:42] | opening main database
+INFO - [textaudio] [2024-06-29 18:29:26] | opening main database
+INFO - [textaudio] [2024-06-29 18:30:31] | opening main database
+ERROR - [textaudio] [2024-06-29 18:30:45] | missing tts file: textaudios/1_1.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:45] | missing tts file: textaudios/1_2.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:46] | missing tts file: textaudios/1_3.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:46] | missing tts file: textaudios/1_0.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:46] | missing tts file: textaudios/2_1.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:46] | missing tts file: textaudios/2_2.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:47] | missing tts file: textaudios/2_3.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:47] | missing tts file: textaudios/2_0.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:47] | missing tts file: textaudios/3_1.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:48] | missing tts file: textaudios/3_2.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:48] | missing tts file: textaudios/3_3.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:48] | missing tts file: textaudios/3_0.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:48] | missing tts file: textaudios/4_1.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:49] | missing tts file: textaudios/4_2.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:49] | missing tts file: textaudios/4_3.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:49] | missing tts file: textaudios/4_0.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:49] | missing tts file: textaudios/5_1.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:50] | missing tts file: textaudios/5_2.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:50] | missing tts file: textaudios/5_3.mp3 | id: t , Level: 3
+ERROR - [textaudio] [2024-06-29 18:30:50] | missing tts file: textaudios/5_0.mp3 | id: t , Level: 3
+ERROR - [discord_logger] [2024-06-29 18:30:51] | failed sending discord error webhook , Level: 0
+INFO - [textaudio] [2024-06-29 18:34:25] | opening main database
+INFO - [textaudio] [2024-06-29 18:36:16] | opening main database
+INFO - [textaudio] [2024-06-29 18:37:20] | opening main database
+INFO - [textaudio] [2024-06-29 18:39:10] | opening main database
+ERROR - [textaudio] [2024-06-29 18:39:30] | missing tts file: textaudios/1_1.mp3 | id: 1 , Level: 3
+ERROR - [textaudio] [2024-06-29 18:39:35] | missing tts file: textaudios/1_2.mp3 | id: 1 , Level: 3
+INFO - [textaudio] [2024-06-29 18:40:28] | opening main database
+INFO - [textaudio] [2024-06-29 18:41:18] | opening main database
+INFO - [textaudio] [2024-06-29 18:41:32] | successfully generated tts: textaudios/1_1.mp3
+INFO - [textaudio] [2024-06-29 18:41:32] | successfully generated tts: textaudios/1_2.mp3
+INFO - [textaudio] [2024-06-29 18:41:32] | successfully generated tts: textaudios/1_3.mp3
+INFO - [textaudio] [2024-06-29 18:41:33] | successfully generated tts: textaudios/1_0.mp3
+INFO - [textaudio] [2024-06-29 18:41:33] | successfully generated tts: textaudios/2_1.mp3
+INFO - [textaudio] [2024-06-29 18:41:33] | successfully generated tts: textaudios/2_2.mp3
+INFO - [textaudio] [2024-06-29 18:41:33] | successfully generated tts: textaudios/2_3.mp3
+INFO - [textaudio] [2024-06-29 18:41:34] | successfully generated tts: textaudios/2_0.mp3
+INFO - [textaudio] [2024-06-29 18:41:34] | successfully generated tts: textaudios/3_1.mp3
+INFO - [textaudio] [2024-06-29 18:41:34] | successfully generated tts: textaudios/3_2.mp3
+INFO - [textaudio] [2024-06-29 18:41:35] | successfully generated tts: textaudios/3_3.mp3
+INFO - [textaudio] [2024-06-29 18:41:35] | successfully generated tts: textaudios/3_0.mp3
+INFO - [textaudio] [2024-06-29 18:41:35] | successfully generated tts: textaudios/4_1.mp3
+INFO - [textaudio] [2024-06-29 18:41:36] | successfully generated tts: textaudios/4_2.mp3
+INFO - [textaudio] [2024-06-29 18:41:36] | successfully generated tts: textaudios/4_3.mp3
+INFO - [textaudio] [2024-06-29 18:41:36] | successfully generated tts: textaudios/4_0.mp3
+INFO - [textaudio] [2024-06-29 18:41:37] | successfully generated tts: textaudios/5_1.mp3
+INFO - [textaudio] [2024-06-29 18:41:38] | successfully generated tts: textaudios/5_2.mp3
+INFO - [textaudio] [2024-06-29 18:41:38] | successfully generated tts: textaudios/5_3.mp3
+INFO - [textaudio] [2024-06-29 18:41:38] | successfully generated tts: textaudios/5_0.mp3
+INFO - [textaudio] [2024-06-29 18:43:44] | opening main database
+INFO - [textaudio] [2024-06-29 18:43:59] | successfully generated tts: textaudios/1_1.mp3
+INFO - [textaudio] [2024-06-29 18:44:00] | successfully generated tts: textaudios/1_2.mp3
+INFO - [textaudio] [2024-06-29 18:44:01] | successfully generated tts: textaudios/1_3.mp3
+INFO - [textaudio] [2024-06-29 18:44:02] | successfully generated tts: textaudios/1_0.mp3
+INFO - [textaudio] [2024-06-29 18:44:04] | successfully generated tts: textaudios/2_1.mp3
+INFO - [textaudio] [2024-06-29 18:44:05] | successfully generated tts: textaudios/2_2.mp3
+INFO - [textaudio] [2024-06-29 18:44:06] | successfully generated tts: textaudios/2_3.mp3
+INFO - [textaudio] [2024-06-29 18:44:07] | successfully generated tts: textaudios/2_0.mp3
+INFO - [textaudio] [2024-06-29 18:44:09] | successfully generated tts: textaudios/3_1.mp3
+INFO - [textaudio] [2024-06-29 18:44:10] | successfully generated tts: textaudios/3_2.mp3
+INFO - [textaudio] [2024-06-29 18:44:12] | successfully generated tts: textaudios/3_3.mp3
+INFO - [textaudio] [2024-06-29 18:44:13] | successfully generated tts: textaudios/3_0.mp3
+INFO - [textaudio] [2024-06-29 18:44:14] | successfully generated tts: textaudios/4_1.mp3
+INFO - [textaudio] [2024-06-29 18:44:15] | successfully generated tts: textaudios/4_2.mp3
+INFO - [textaudio] [2024-06-29 18:44:17] | successfully generated tts: textaudios/4_3.mp3
+INFO - [textaudio] [2024-06-29 18:44:18] | successfully generated tts: textaudios/4_0.mp3
+INFO - [textaudio] [2024-06-29 18:44:19] | successfully generated tts: textaudios/5_1.mp3
+INFO - [textaudio] [2024-06-29 18:44:21] | successfully generated tts: textaudios/5_2.mp3
+INFO - [textaudio] [2024-06-29 18:44:22] | successfully generated tts: textaudios/5_3.mp3
+INFO - [textaudio] [2024-06-29 18:44:23] | successfully generated tts: textaudios/5_0.mp3
+INFO - [textaudio] [2024-06-29 18:44:53] | opening main database
+INFO - [textaudio] [2024-06-29 18:45:07] | successfully generated tts: textaudios/1_1.mp3
+INFO - [textaudio] [2024-06-29 18:45:08] | successfully generated tts: textaudios/1_2.mp3
+INFO - [textaudio] [2024-06-29 18:45:09] | successfully generated tts: textaudios/1_3.mp3
+INFO - [textaudio] [2024-06-29 18:45:10] | successfully generated tts: textaudios/1_0.mp3
+INFO - [textaudio] [2024-06-29 18:45:11] | successfully generated tts: textaudios/2_1.mp3
+INFO - [textaudio] [2024-06-29 18:45:12] | successfully generated tts: textaudios/2_2.mp3
+INFO - [textaudio] [2024-06-29 18:45:13] | successfully generated tts: textaudios/2_3.mp3
+INFO - [textaudio] [2024-06-29 18:45:14] | successfully generated tts: textaudios/2_0.mp3
+INFO - [textaudio] [2024-06-29 18:45:15] | successfully generated tts: textaudios/3_1.mp3
+INFO - [textaudio] [2024-06-29 18:45:16] | successfully generated tts: textaudios/3_2.mp3
+INFO - [textaudio] [2024-06-29 18:45:17] | successfully generated tts: textaudios/3_3.mp3
+INFO - [textaudio] [2024-06-29 18:45:18] | successfully generated tts: textaudios/3_0.mp3
+INFO - [textaudio] [2024-06-29 18:45:19] | successfully generated tts: textaudios/4_1.mp3
+INFO - [textaudio] [2024-06-29 18:45:20] | successfully generated tts: textaudios/4_2.mp3
+INFO - [textaudio] [2024-06-29 18:45:21] | successfully generated tts: textaudios/4_3.mp3
+INFO - [textaudio] [2024-06-29 18:45:22] | successfully generated tts: textaudios/4_0.mp3
+INFO - [textaudio] [2024-06-29 18:45:23] | successfully generated tts: textaudios/5_1.mp3
+INFO - [textaudio] [2024-06-29 18:45:24] | successfully generated tts: textaudios/5_2.mp3
+INFO - [textaudio] [2024-06-29 18:45:25] | successfully generated tts: textaudios/5_3.mp3
+INFO - [textaudio] [2024-06-29 18:45:26] | successfully generated tts: textaudios/5_0.mp3
+INFO - [textaudio] [2024-06-29 18:47:20] | opening main database
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/1_1.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/1_2.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/1_3.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/1_0.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/2_1.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/2_2.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/2_3.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/2_0.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/3_1.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/3_2.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/3_3.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/3_0.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/4_1.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/4_2.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/4_3.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/4_0.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/5_1.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/5_2.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/5_3.mp3
+INFO - [textaudio] [2024-06-29 18:47:34] | successfully generated tts: textaudios/5_0.mp3
+ERROR - [textaudio] [2024-06-29 18:47:34] | error connecting to main database , Level: 3
+INFO - [textaudio] [2024-06-29 18:51:56] | opening main database
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/2_1.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/2_2.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/2_3.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/2_0.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/3_1.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/3_2.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/3_3.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/3_0.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/4_1.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/4_2.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/4_3.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/4_0.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/5_1.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/5_2.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/5_3.mp3
+INFO - [textaudio] [2024-06-29 18:52:07] | successfully generated tts: textaudios/5_0.mp3
+ERROR - [textaudio] [2024-06-29 18:52:07] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:52:17] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:52:27] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:52:37] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:52:47] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:52:57] | error connecting to main database , Level: 3
+INFO - [textaudio] [2024-06-29 18:53:03] | opening main database
+INFO - [textaudio] [2024-06-29 18:53:11] | successfully generated tts: textaudios/3_1.mp3
+INFO - [textaudio] [2024-06-29 18:53:11] | successfully generated tts: textaudios/3_2.mp3
+INFO - [textaudio] [2024-06-29 18:53:11] | successfully generated tts: textaudios/3_3.mp3
+INFO - [textaudio] [2024-06-29 18:53:11] | successfully generated tts: textaudios/3_0.mp3
+INFO - [textaudio] [2024-06-29 18:53:11] | successfully generated tts: textaudios/4_1.mp3
+INFO - [textaudio] [2024-06-29 18:53:11] | successfully generated tts: textaudios/4_2.mp3
+INFO - [textaudio] [2024-06-29 18:53:11] | successfully generated tts: textaudios/4_3.mp3
+INFO - [textaudio] [2024-06-29 18:53:11] | successfully generated tts: textaudios/4_0.mp3
+INFO - [textaudio] [2024-06-29 18:53:11] | successfully generated tts: textaudios/5_1.mp3
+INFO - [textaudio] [2024-06-29 18:53:11] | successfully generated tts: textaudios/5_2.mp3
+INFO - [textaudio] [2024-06-29 18:53:11] | successfully generated tts: textaudios/5_3.mp3
+INFO - [textaudio] [2024-06-29 18:53:11] | successfully generated tts: textaudios/5_0.mp3
+ERROR - [textaudio] [2024-06-29 18:53:11] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:53:21] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:53:31] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:53:41] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:53:51] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:54:01] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:54:11] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:54:21] | FATAL error connecting to main database, continuing to prevent endlessloop , Level: 3
+ERROR - [textaudio] [2024-06-29 18:54:31] | error connecting to main database , Level: 3
+INFO - [textaudio] [2024-06-29 18:54:42] | opening main database
+INFO - [textaudio] [2024-06-29 18:54:44] | successfully generated tts: textaudios/5_1.mp3
+INFO - [textaudio] [2024-06-29 18:54:44] | successfully generated tts: textaudios/5_2.mp3
+INFO - [textaudio] [2024-06-29 18:54:44] | successfully generated tts: textaudios/5_3.mp3
+INFO - [textaudio] [2024-06-29 18:54:44] | successfully generated tts: textaudios/5_0.mp3
+ERROR - [textaudio] [2024-06-29 18:54:44] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:54:54] | error connecting to main database , Level: 3
+ERROR - [textaudio] [2024-06-29 18:55:04] | error connecting to main database , Level: 3
+INFO - [textaudio] [2024-06-29 18:57:35] | opening main database
+INFO - [textaudio] [2024-06-30 16:36:57] | opening main database
